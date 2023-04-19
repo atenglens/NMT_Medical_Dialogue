@@ -1,0 +1,2226 @@
+<html>
+<head>
+<link rel="stylesheet" href="compare_mt.css">
+</head>
+<script>
+
+function showhide(elem) {
+  var x = document.getElementById(elem);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+<body>
+<h1>word fmeas by frequency bucket</h1>
+ <a name="bucket0"/><h3> Examples for Bucket <1 </h3><a name="bucket1"/><h3> Examples for Bucket 1 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Are you experiencing any <em>shoulder</em> pain? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your <em>shoulder</em> hurt? </td> </tr><tr> <th> sys2 </th>
+  <td> Will your <em>shoulder</em> hurt? </td> </tr><tr> <th> sys3 </th>
+  <td> Will your nose hurt? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your shoulders hurt? </td> </tr>
+</table>
+ <br/><button onclick="showhide('003_latex')">Show/Hide LaTeX</button> <br/><pre id="003_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Are you experiencing any \textlessem\textgreatershoulder\textless/em\textgreater pain? \\
+sys1 & Does your \textlessem\textgreatershoulder\textless/em\textgreater hurt? \\
+sys2 & Will your \textlessem\textgreatershoulder\textless/em\textgreater hurt? \\
+sys3 & Will your nose hurt? \\
+sys4 & Does your shoulders hurt? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table003}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Has there been discharge from your child's <em>eyes?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Do your kids have secretions in their <em>eyes?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Do your children have secretions in their <em>eyes?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Does your child's eye have a tear? </td> </tr><tr> <th> sys4 </th>
+  <td> Do your child&#8217;s eyes have a secretion? </td> </tr>
+</table>
+ <br/><button onclick="showhide('004_latex')">Show/Hide LaTeX</button> <br/><pre id="004_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Has there been discharge from your child's \textlessem\textgreatereyes?\textless/em\textgreater \\
+sys1 & Do your kids have secretions in their \textlessem\textgreatereyes?\textless/em\textgreater \\
+sys2 & Do your children have secretions in their \textlessem\textgreatereyes?\textless/em\textgreater \\
+sys3 & Does your child's eye have a tear? \\
+sys4 & Do your child&#8217;s eyes have a secretion? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table004}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> What is this <em>called?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> What's this <em>called?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> What's this? </td> </tr><tr> <th> sys3 </th>
+  <td> What's this name? </td> </tr><tr> <th> sys4 </th>
+  <td> What is this <em>called?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('005_latex')">Show/Hide LaTeX</button> <br/><pre id="005_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & What is this \textlessem\textgreatercalled?\textless/em\textgreater \\
+sys1 & What's this \textlessem\textgreatercalled?\textless/em\textgreater \\
+sys2 & What's this? \\
+sys3 & What's this name? \\
+sys4 & What is this \textlessem\textgreatercalled?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table005}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you have an autoimmune disease affecting your blood <em>vessels?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Do you have any autoimmune diseases affecting your veins? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have autoimmune diseases that affect your blood <em>vessels?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Do you have an immune disease that affects your own blood? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you have autoimmune diseases affecting your blood <em>vessels?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('006_latex')">Show/Hide LaTeX</button> <br/><pre id="006_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you have an autoimmune disease affecting your blood \textlessem\textgreatervessels?\textless/em\textgreater \\
+sys1 & Do you have any autoimmune diseases affecting your veins? \\
+sys2 & Do you have autoimmune diseases that affect your blood \textlessem\textgreatervessels?\textless/em\textgreater \\
+sys3 & Do you have an immune disease that affects your own blood? \\
+sys4 & Do you have autoimmune diseases affecting your blood \textlessem\textgreatervessels?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table006}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you have <em>burning</em> in your genital area? </td> </tr><tr> <th> sys1 </th>
+  <td> Do you have a <em>burning</em> ground for your sexual organs? </td> </tr><tr> <th> sys2 </th>
+  <td> Do your sex organs have <em>burning</em> spores? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your sexual organs have a burnout? </td> </tr><tr> <th> sys4 </th>
+  <td> Do your sex organs have burns? </td> </tr>
+</table>
+ <br/><button onclick="showhide('007_latex')">Show/Hide LaTeX</button> <br/><pre id="007_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you have \textlessem\textgreaterburning\textless/em\textgreater in your genital area? \\
+sys1 & Do you have a \textlessem\textgreaterburning\textless/em\textgreater ground for your sexual organs? \\
+sys2 & Do your sex organs have \textlessem\textgreaterburning\textless/em\textgreater spores? \\
+sys3 & Does your sexual organs have a burnout? \\
+sys4 & Do your sex organs have burns? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table007}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Can you try to <em>bring</em> in a <em>copy</em> of the <em>results?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Can you <em>bring</em> a <em>copy</em> of the <em>results?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Can you <em>bring</em> a <em>copy</em> of the <em>results?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Can you <em>bring</em> me a <em>copy</em> of the test <em>results?</em> </td> </tr><tr> <th> sys4 </th>
+  <td> Can you <em>bring</em> a <em>copy</em> of the test <em>results?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('008_latex')">Show/Hide LaTeX</button> <br/><pre id="008_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Can you try to \textlessem\textgreaterbring\textless/em\textgreater in a \textlessem\textgreatercopy\textless/em\textgreater of the \textlessem\textgreaterresults?\textless/em\textgreater \\
+sys1 & Can you \textlessem\textgreaterbring\textless/em\textgreater a \textlessem\textgreatercopy\textless/em\textgreater of the \textlessem\textgreaterresults?\textless/em\textgreater \\
+sys2 & Can you \textlessem\textgreaterbring\textless/em\textgreater a \textlessem\textgreatercopy\textless/em\textgreater of the \textlessem\textgreaterresults?\textless/em\textgreater \\
+sys3 & Can you \textlessem\textgreaterbring\textless/em\textgreater me a \textlessem\textgreatercopy\textless/em\textgreater of the test \textlessem\textgreaterresults?\textless/em\textgreater \\
+sys4 & Can you \textlessem\textgreaterbring\textless/em\textgreater a \textlessem\textgreatercopy\textless/em\textgreater of the test \textlessem\textgreaterresults?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table008}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We are going to give you <em>some</em> medication to help you go to <em>sleep.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> We're gonna give you <em>some</em> medicine to help you <em>sleep.</em> </td> </tr><tr> <th> sys2 </th>
+  <td> We're going to give you <em>some</em> medicine to help you <em>sleep.</em> </td> </tr><tr> <th> sys3 </th>
+  <td> We're gonna give you <em>some</em> drugs to help you <em>sleep.</em> </td> </tr><tr> <th> sys4 </th>
+  <td> We&#8217;re going to give you <em>some</em> medication to help you <em>sleep.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('009_latex')">Show/Hide LaTeX</button> <br/><pre id="009_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We are going to give you \textlessem\textgreatersome\textless/em\textgreater medication to help you go to \textlessem\textgreatersleep.\textless/em\textgreater \\
+sys1 & We're gonna give you \textlessem\textgreatersome\textless/em\textgreater medicine to help you \textlessem\textgreatersleep.\textless/em\textgreater \\
+sys2 & We're going to give you \textlessem\textgreatersome\textless/em\textgreater medicine to help you \textlessem\textgreatersleep.\textless/em\textgreater \\
+sys3 & We're gonna give you \textlessem\textgreatersome\textless/em\textgreater drugs to help you \textlessem\textgreatersleep.\textless/em\textgreater \\
+sys4 & We&#8217;re going to give you \textlessem\textgreatersome\textless/em\textgreater medication to help you \textlessem\textgreatersleep.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table009}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you <em>think</em> you may be <em>pregnant?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Do you <em>think</em> you're <em>pregnant?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Do you <em>think</em> you are <em>pregnant?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> You <em>think</em> you're <em>pregnant?</em> </td> </tr><tr> <th> sys4 </th>
+  <td> Do you <em>think</em> you are <em>pregnant?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('010_latex')">Show/Hide LaTeX</button> <br/><pre id="010_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you \textlessem\textgreaterthink\textless/em\textgreater you may be \textlessem\textgreaterpregnant?\textless/em\textgreater \\
+sys1 & Do you \textlessem\textgreaterthink\textless/em\textgreater you're \textlessem\textgreaterpregnant?\textless/em\textgreater \\
+sys2 & Do you \textlessem\textgreaterthink\textless/em\textgreater you are \textlessem\textgreaterpregnant?\textless/em\textgreater \\
+sys3 & You \textlessem\textgreaterthink\textless/em\textgreater you're \textlessem\textgreaterpregnant?\textless/em\textgreater \\
+sys4 & Do you \textlessem\textgreaterthink\textless/em\textgreater you are \textlessem\textgreaterpregnant?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table010}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> How many glasses of water do you <em>drink</em> each <em>day?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> How many cups of water do you <em>drink</em> every <em>day?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> How many glasses of water do you <em>drink</em> a <em>day?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Do you <em>drink</em> some water every <em>day?</em> </td> </tr><tr> <th> sys4 </th>
+  <td> How many glasses of water do you <em>drink</em> a <em>day?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('011_latex')">Show/Hide LaTeX</button> <br/><pre id="011_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & How many glasses of water do you \textlessem\textgreaterdrink\textless/em\textgreater each \textlessem\textgreaterday?\textless/em\textgreater \\
+sys1 & How many cups of water do you \textlessem\textgreaterdrink\textless/em\textgreater every \textlessem\textgreaterday?\textless/em\textgreater \\
+sys2 & How many glasses of water do you \textlessem\textgreaterdrink\textless/em\textgreater a \textlessem\textgreaterday?\textless/em\textgreater \\
+sys3 & Do you \textlessem\textgreaterdrink\textless/em\textgreater some water every \textlessem\textgreaterday?\textless/em\textgreater \\
+sys4 & How many glasses of water do you \textlessem\textgreaterdrink\textless/em\textgreater a \textlessem\textgreaterday?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table011}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Was this the first time this <em>happened?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Is this the first time it <em>happened?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Is this the first time this has <em>happened?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Is this the first time this <em>happened?</em> </td> </tr><tr> <th> sys4 </th>
+  <td> Is this the first time that <em>happened?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('012_latex')">Show/Hide LaTeX</button> <br/><pre id="012_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Was this the first time this \textlessem\textgreaterhappened?\textless/em\textgreater \\
+sys1 & Is this the first time it \textlessem\textgreaterhappened?\textless/em\textgreater \\
+sys2 & Is this the first time this has \textlessem\textgreaterhappened?\textless/em\textgreater \\
+sys3 & Is this the first time this \textlessem\textgreaterhappened?\textless/em\textgreater \\
+sys4 & Is this the first time that \textlessem\textgreaterhappened?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table012}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We will <em>perform</em> a CT <em>scan,</em> a test to look at the <em>area</em> in more <em>detail.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> We'll do a scan and take a closer look at this film. </td> </tr><tr> <th> sys2 </th>
+  <td> We'll do a scan and take a closer look at this video. </td> </tr><tr> <th> sys3 </th>
+  <td> We'll do a survey and look more closely at this. </td> </tr><tr> <th> sys4 </th>
+  <td> We will make a scan and look at this piece more carefully. </td> </tr>
+</table>
+ <br/><button onclick="showhide('013_latex')">Show/Hide LaTeX</button> <br/><pre id="013_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We will \textlessem\textgreaterperform\textless/em\textgreater a CT \textlessem\textgreaterscan,\textless/em\textgreater a test to look at the \textlessem\textgreaterarea\textless/em\textgreater in more \textlessem\textgreaterdetail.\textless/em\textgreater \\
+sys1 & We'll do a scan and take a closer look at this film. \\
+sys2 & We'll do a scan and take a closer look at this video. \\
+sys3 & We'll do a survey and look more closely at this. \\
+sys4 & We will make a scan and look at this piece more carefully. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table013}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan shows that the <em>intestine</em> has <em>telescoped</em> <em>onto</em> <em>itself.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> The CT scan shows the intestinal stacking. </td> </tr><tr> <th> sys2 </th>
+  <td> CT scans show the intestines overlapping. </td> </tr><tr> <th> sys3 </th>
+  <td> CT scans show the path set together. </td> </tr><tr> <th> sys4 </th>
+  <td> CT scans show the intestines clothed together. </td> </tr>
+</table>
+ <br/><button onclick="showhide('014_latex')">Show/Hide LaTeX</button> <br/><pre id="014_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The CT scan shows that the \textlessem\textgreaterintestine\textless/em\textgreater has \textlessem\textgreatertelescoped\textless/em\textgreater \textlessem\textgreateronto\textless/em\textgreater \textlessem\textgreateritself.\textless/em\textgreater \\
+sys1 & The CT scan shows the intestinal stacking. \\
+sys2 & CT scans show the intestines overlapping. \\
+sys3 & CT scans show the path set together. \\
+sys4 & CT scans show the intestines clothed together. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table014}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> I am <em>prescribing</em> a <em>pill</em> that will help to <em>lower</em> the pressure in the eye. </td> </tr><tr> <th> sys1 </th>
+  <td> I'm putting out drugs that help reduce the pressure on my eyes. </td> </tr><tr> <th> sys2 </th>
+  <td> I'm trying to get medication to help reduce eye pressure. </td> </tr><tr> <th> sys3 </th>
+  <td> I am opening up drugs that help reduce eye pressure. </td> </tr><tr> <th> sys4 </th>
+  <td> I&#8217;m taking medications that help reduce eye pressure. </td> </tr>
+</table>
+ <br/><button onclick="showhide('015_latex')">Show/Hide LaTeX</button> <br/><pre id="015_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & I am \textlessem\textgreaterprescribing\textless/em\textgreater a \textlessem\textgreaterpill\textless/em\textgreater that will help to \textlessem\textgreaterlower\textless/em\textgreater the pressure in the eye. \\
+sys1 & I'm putting out drugs that help reduce the pressure on my eyes. \\
+sys2 & I'm trying to get medication to help reduce eye pressure. \\
+sys3 & I am opening up drugs that help reduce eye pressure. \\
+sys4 & I&#8217;m taking medications that help reduce eye pressure. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table015}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> You will feel a pinch when the <em>numbing</em> medication is <em>inserted.</em> You may feel pressure when the needle is <em>inserted</em> to drain the fluid. </td> </tr><tr> <th> sys1 </th>
+  <td> Give you an anesthetic, you'll feel a prick. When we insert a needle to draw a liquid, you may feel a little pressure. </td> </tr><tr> <th> sys2 </th>
+  <td> If you are given anesthetic, you will feel a sting. You may feel some pressure when we insert a needle to draw </td> </tr><tr> <th> sys3 </th>
+  <td> To you the drugs are that you will feel a shock. When we insert into your body to extract fluid, you may feel some pressure. </td> </tr><tr> <th> sys4 </th>
+  <td> Giving you anesthesia is that you will feel a bit. When we insert the ink to extract the liquid, you may feel some pressure. </td> </tr>
+</table>
+ <br/><button onclick="showhide('016_latex')">Show/Hide LaTeX</button> <br/><pre id="016_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & You will feel a pinch when the \textlessem\textgreaternumbing\textless/em\textgreater medication is \textlessem\textgreaterinserted.\textless/em\textgreater You may feel pressure when the needle is \textlessem\textgreaterinserted\textless/em\textgreater to drain the fluid. \\
+sys1 & Give you an anesthetic, you'll feel a prick. When we insert a needle to draw a liquid, you may feel a little pressure. \\
+sys2 & If you are given anesthetic, you will feel a sting. You may feel some pressure when we insert a needle to draw \\
+sys3 & To you the drugs are that you will feel a shock. When we insert into your body to extract fluid, you may feel some pressure. \\
+sys4 & Giving you anesthesia is that you will feel a bit. When we insert the ink to extract the liquid, you may feel some pressure. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table016}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Here</em> are your <em>prescriptions.</em> It is very important that you <em>pick</em> them up. </td> </tr><tr> <th> sys1 </th>
+  <td> Here's your medicine. You have to get it. </td> </tr><tr> <th> sys2 </th>
+  <td> This is your medicine. You must go get your medicine. </td> </tr><tr> <th> sys3 </th>
+  <td> This is your medicine. You're going to take it. </td> </tr><tr> <th> sys4 </th>
+  <td> This is your medicine. you must take the medicine. </td> </tr>
+</table>
+ <br/><button onclick="showhide('017_latex')">Show/Hide LaTeX</button> <br/><pre id="017_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterHere\textless/em\textgreater are your \textlessem\textgreaterprescriptions.\textless/em\textgreater It is very important that you \textlessem\textgreaterpick\textless/em\textgreater them up. \\
+sys1 & Here's your medicine. You have to get it. \\
+sys2 & This is your medicine. You must go get your medicine. \\
+sys3 & This is your medicine. You're going to take it. \\
+sys4 & This is your medicine. you must take the medicine. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table017}
+\end{table}</pre><a name="bucket2"/><h3> Examples for Bucket 2 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you hear the sound on one side or <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Sound coming from one or <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Is the sound coming from one side or both? </td> </tr><tr> <th> sys3 </th>
+  <td> The sound is from one side or two? </td> </tr><tr> <th> sys4 </th>
+  <td> Does the sound come from one or <em>both</em> <em>sides?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('018_latex')">Show/Hide LaTeX</button> <br/><pre id="018_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you hear the sound on one side or \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys1 & Sound coming from one or \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys2 & Is the sound coming from one side or both? \\
+sys3 & The sound is from one side or two? \\
+sys4 & Does the sound come from one or \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table018}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> I can't use gel on the speculum because it will interfere with the test <em>results.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> I can't use gel on a peeper because it affects the results of the tests. </td> </tr><tr> <th> sys2 </th>
+  <td> I can't use gel on the analgesic, because it will affect the test <em>results.</em> </td> </tr><tr> <th> sys3 </th>
+  <td> I can't use a pen on a wallet because this would affect the results of the test. </td> </tr><tr> <th> sys4 </th>
+  <td> I can't use gel on the spider, because this will affect the test <em>results.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('019_latex')">Show/Hide LaTeX</button> <br/><pre id="019_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & I can't use gel on the speculum because it will interfere with the test \textlessem\textgreaterresults.\textless/em\textgreater \\
+sys1 & I can't use gel on a peeper because it affects the results of the tests. \\
+sys2 & I can't use gel on the analgesic, because it will affect the test \textlessem\textgreaterresults.\textless/em\textgreater \\
+sys3 & I can't use a pen on a wallet because this would affect the results of the test. \\
+sys4 & I can't use gel on the spider, because this will affect the test \textlessem\textgreaterresults.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table019}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you have a list of the <em>medications</em> that your child is taking? </td> </tr><tr> <th> sys1 </th>
+  <td> Do you have a list of drugs your child's ever taken? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have a list of <em>medications</em> your child has taken? </td> </tr><tr> <th> sys3 </th>
+  <td> Do you have a list of medicines your children have used? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you have a list of <em>medications</em> your child has taken? </td> </tr>
+</table>
+ <br/><button onclick="showhide('020_latex')">Show/Hide LaTeX</button> <br/><pre id="020_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you have a list of the \textlessem\textgreatermedications\textless/em\textgreater that your child is taking? \\
+sys1 & Do you have a list of drugs your child's ever taken? \\
+sys2 & Do you have a list of \textlessem\textgreatermedications\textless/em\textgreater your child has taken? \\
+sys3 & Do you have a list of medicines your children have used? \\
+sys4 & Do you have a list of \textlessem\textgreatermedications\textless/em\textgreater your child has taken? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table020}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> I have to clean your urethra before I <em>insert</em> the tube. </td> </tr><tr> <th> sys1 </th>
+  <td> I need to clean your urinary before I <em>insert</em> the tube. </td> </tr><tr> <th> sys2 </th>
+  <td> I need to clean your urethra before I can <em>insert</em> the tube. </td> </tr><tr> <th> sys3 </th>
+  <td> Before inserting the rule, I need to clear your path. </td> </tr><tr> <th> sys4 </th>
+  <td> Before putting the tube in, I need to clean your urinary tract. </td> </tr>
+</table>
+ <br/><button onclick="showhide('021_latex')">Show/Hide LaTeX</button> <br/><pre id="021_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & I have to clean your urethra before I \textlessem\textgreaterinsert\textless/em\textgreater the tube. \\
+sys1 & I need to clean your urinary before I \textlessem\textgreaterinsert\textless/em\textgreater the tube. \\
+sys2 & I need to clean your urethra before I can \textlessem\textgreaterinsert\textless/em\textgreater the tube. \\
+sys3 & Before inserting the rule, I need to clear your path. \\
+sys4 & Before putting the tube in, I need to clean your urinary tract. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table021}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Did you have any <em>complications</em> from the surgery, like infection? </td> </tr><tr> <th> sys1 </th>
+  <td> You've had an infection and any surgical complications? </td> </tr><tr> <th> sys2 </th>
+  <td> Have you had any <em>complications</em> from surgery, such as infection? </td> </tr><tr> <th> sys3 </th>
+  <td> Have you ever had any surgery or surgery? </td> </tr><tr> <th> sys4 </th>
+  <td> Have you had any surgical <em>complications</em> waiting for an infection? </td> </tr>
+</table>
+ <br/><button onclick="showhide('022_latex')">Show/Hide LaTeX</button> <br/><pre id="022_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Did you have any \textlessem\textgreatercomplications\textless/em\textgreater from the surgery, like infection? \\
+sys1 & You've had an infection and any surgical complications? \\
+sys2 & Have you had any \textlessem\textgreatercomplications\textless/em\textgreater from surgery, such as infection? \\
+sys3 & Have you ever had any surgery or surgery? \\
+sys4 & Have you had any surgical \textlessem\textgreatercomplications\textless/em\textgreater waiting for an infection? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table022}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Does this sound the same on <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Did you hear the same sound on <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Is it the same sound you hear on <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Like the sound on <em>both</em> <em>sides?</em> </td> </tr><tr> <th> sys4 </th>
+  <td> Do you hear the same sounds on <em>both</em> <em>sides?</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('023_latex')">Show/Hide LaTeX</button> <br/><pre id="023_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Does this sound the same on \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys1 & Did you hear the same sound on \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys2 & Is it the same sound you hear on \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys3 & Like the sound on \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+sys4 & Do you hear the same sounds on \textlessem\textgreaterboth\textless/em\textgreater \textlessem\textgreatersides?\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table023}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Was this the <em>first</em> <em>time</em> this happened? </td> </tr><tr> <th> sys1 </th>
+  <td> Is this the <em>first</em> <em>time</em> it happened? </td> </tr><tr> <th> sys2 </th>
+  <td> Is this the <em>first</em> <em>time</em> this has happened? </td> </tr><tr> <th> sys3 </th>
+  <td> Is this the <em>first</em> <em>time</em> this happened? </td> </tr><tr> <th> sys4 </th>
+  <td> Is this the <em>first</em> <em>time</em> that happened? </td> </tr>
+</table>
+ <br/><button onclick="showhide('024_latex')">Show/Hide LaTeX</button> <br/><pre id="024_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Was this the \textlessem\textgreaterfirst\textless/em\textgreater \textlessem\textgreatertime\textless/em\textgreater this happened? \\
+sys1 & Is this the \textlessem\textgreaterfirst\textless/em\textgreater \textlessem\textgreatertime\textless/em\textgreater it happened? \\
+sys2 & Is this the \textlessem\textgreaterfirst\textless/em\textgreater \textlessem\textgreatertime\textless/em\textgreater this has happened? \\
+sys3 & Is this the \textlessem\textgreaterfirst\textless/em\textgreater \textlessem\textgreatertime\textless/em\textgreater this happened? \\
+sys4 & Is this the \textlessem\textgreaterfirst\textless/em\textgreater \textlessem\textgreatertime\textless/em\textgreater that happened? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table024}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you <em>know</em> <em>what</em> test you had? </td> </tr><tr> <th> sys1 </th>
+  <td> Do you <em>know</em> <em>what</em> test you've been through? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you <em>know</em> <em>what</em> tests you have been through? </td> </tr><tr> <th> sys3 </th>
+  <td> Do you <em>know</em> <em>what</em> you've done? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you <em>know</em> <em>what</em> tests you have passed? </td> </tr>
+</table>
+ <br/><button onclick="showhide('025_latex')">Show/Hide LaTeX</button> <br/><pre id="025_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you \textlessem\textgreaterknow\textless/em\textgreater \textlessem\textgreaterwhat\textless/em\textgreater test you had? \\
+sys1 & Do you \textlessem\textgreaterknow\textless/em\textgreater \textlessem\textgreaterwhat\textless/em\textgreater test you've been through? \\
+sys2 & Do you \textlessem\textgreaterknow\textless/em\textgreater \textlessem\textgreaterwhat\textless/em\textgreater tests you have been through? \\
+sys3 & Do you \textlessem\textgreaterknow\textless/em\textgreater \textlessem\textgreaterwhat\textless/em\textgreater you've done? \\
+sys4 & Do you \textlessem\textgreaterknow\textless/em\textgreater \textlessem\textgreaterwhat\textless/em\textgreater tests you have passed? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table025}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The INR is <em>too</em> low; we will adjust the medication. </td> </tr><tr> <th> sys1 </th>
+  <td> The indicators are <em>too</em> low; we need to adjust the use of drugs. </td> </tr><tr> <th> sys2 </th>
+  <td> The indicator is <em>too</em> low; we need to adjust the medication. </td> </tr><tr> <th> sys3 </th>
+  <td> The indicators are <em>too</em> low; we need to adjust them. </td> </tr><tr> <th> sys4 </th>
+  <td> The indicators are <em>too</em> low; we need to adjust the drug. </td> </tr>
+</table>
+ <br/><button onclick="showhide('026_latex')">Show/Hide LaTeX</button> <br/><pre id="026_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The INR is \textlessem\textgreatertoo\textless/em\textgreater low; we will adjust the medication. \\
+sys1 & The indicators are \textlessem\textgreatertoo\textless/em\textgreater low; we need to adjust the use of drugs. \\
+sys2 & The indicator is \textlessem\textgreatertoo\textless/em\textgreater low; we need to adjust the medication. \\
+sys3 & The indicators are \textlessem\textgreatertoo\textless/em\textgreater low; we need to adjust them. \\
+sys4 & The indicators are \textlessem\textgreatertoo\textless/em\textgreater low; we need to adjust the drug. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table026}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The test <em>results</em> were normal. </td> </tr><tr> <th> sys1 </th>
+  <td> The <em>results</em> are normal. </td> </tr><tr> <th> sys2 </th>
+  <td> The <em>results</em> are normal. </td> </tr><tr> <th> sys3 </th>
+  <td> The test <em>results</em> are normal. </td> </tr><tr> <th> sys4 </th>
+  <td> The test <em>results</em> are normal. </td> </tr>
+</table>
+ <br/><button onclick="showhide('027_latex')">Show/Hide LaTeX</button> <br/><pre id="027_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The test \textlessem\textgreaterresults\textless/em\textgreater were normal. \\
+sys1 & The \textlessem\textgreaterresults\textless/em\textgreater are normal. \\
+sys2 & The \textlessem\textgreaterresults\textless/em\textgreater are normal. \\
+sys3 & The test \textlessem\textgreaterresults\textless/em\textgreater are normal. \\
+sys4 & The test \textlessem\textgreaterresults\textless/em\textgreater are normal. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table027}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Risks of the <em>procedure</em> are <em>uncommon</em> but include the <em>chance</em> of bleeding or infection. </td> </tr><tr> <th> sys1 </th>
+  <td> The risk of treatment is not common, but there is a risk of bleeding or leaching. </td> </tr><tr> <th> sys2 </th>
+  <td> The risk of treatment is rare, but it can lead to bleeding or infection. </td> </tr><tr> <th> sys3 </th>
+  <td> The risk of treatment is uncommon, but there may be bleeding or infection. </td> </tr><tr> <th> sys4 </th>
+  <td> The risk of treatment is not common, but it is possible for bleeding or inflammation. </td> </tr>
+</table>
+ <br/><button onclick="showhide('028_latex')">Show/Hide LaTeX</button> <br/><pre id="028_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Risks of the \textlessem\textgreaterprocedure\textless/em\textgreater are \textlessem\textgreateruncommon\textless/em\textgreater but include the \textlessem\textgreaterchance\textless/em\textgreater of bleeding or infection. \\
+sys1 & The risk of treatment is not common, but there is a risk of bleeding or leaching. \\
+sys2 & The risk of treatment is rare, but it can lead to bleeding or infection. \\
+sys3 & The risk of treatment is uncommon, but there may be bleeding or infection. \\
+sys4 & The risk of treatment is not common, but it is possible for bleeding or inflammation. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table028}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Move</em> your <em>jaw</em> from side to <em>side.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Left and right to the jaws. </td> </tr><tr> <th> sys2 </th>
+  <td> The movement is down. </td> </tr><tr> <th> sys3 </th>
+  <td> It's going down to the left. </td> </tr><tr> <th> sys4 </th>
+  <td> Right to the activity. </td> </tr>
+</table>
+ <br/><button onclick="showhide('029_latex')">Show/Hide LaTeX</button> <br/><pre id="029_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterMove\textless/em\textgreater your \textlessem\textgreaterjaw\textless/em\textgreater from side to \textlessem\textgreaterside.\textless/em\textgreater \\
+sys1 & Left and right to the jaws. \\
+sys2 & The movement is down. \\
+sys3 & It's going down to the left. \\
+sys4 & Right to the activity. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table029}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The blood <em>sugar,</em> or <em>glucose,</em> was <em>elevated.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Blood sugar is a high indicator of glucose. </td> </tr><tr> <th> sys2 </th>
+  <td> The blood sugar is also a high glucose index. </td> </tr><tr> <th> sys3 </th>
+  <td> Blood sugar is also high at the peak of the pollutant. </td> </tr><tr> <th> sys4 </th>
+  <td> The blood sugar index is high. </td> </tr>
+</table>
+ <br/><button onclick="showhide('030_latex')">Show/Hide LaTeX</button> <br/><pre id="030_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The blood \textlessem\textgreatersugar,\textless/em\textgreater or \textlessem\textgreaterglucose,\textless/em\textgreater was \textlessem\textgreaterelevated.\textless/em\textgreater \\
+sys1 & Blood sugar is a high indicator of glucose. \\
+sys2 & The blood sugar is also a high glucose index. \\
+sys3 & Blood sugar is also high at the peak of the pollutant. \\
+sys4 & The blood sugar index is high. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table030}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> How many days <em>does</em> your <em>menstrual</em> cycle usually last? </td> </tr><tr> <th> sys1 </th>
+  <td> How long will your menstruation last? </td> </tr><tr> <th> sys2 </th>
+  <td> How long will your period last? </td> </tr><tr> <th> sys3 </th>
+  <td> Did your month last a few days? </td> </tr><tr> <th> sys4 </th>
+  <td> How many days will your menstruation last? </td> </tr>
+</table>
+ <br/><button onclick="showhide('031_latex')">Show/Hide LaTeX</button> <br/><pre id="031_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & How many days \textlessem\textgreaterdoes\textless/em\textgreater your \textlessem\textgreatermenstrual\textless/em\textgreater cycle usually last? \\
+sys1 & How long will your menstruation last? \\
+sys2 & How long will your period last? \\
+sys3 & Did your month last a few days? \\
+sys4 & How many days will your menstruation last? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table031}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We need to remove <em>those</em> <em>stitches</em> in one week. </td> </tr><tr> <th> sys1 </th>
+  <td> We're going to dismantle these lines in a week. </td> </tr><tr> <th> sys2 </th>
+  <td> We're going to demolish these lines in a week. </td> </tr><tr> <th> sys3 </th>
+  <td> We want to delete these lines a week later. </td> </tr><tr> <th> sys4 </th>
+  <td> We will break these lines in a week. </td> </tr>
+</table>
+ <br/><button onclick="showhide('032_latex')">Show/Hide LaTeX</button> <br/><pre id="032_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We need to remove \textlessem\textgreaterthose\textless/em\textgreater \textlessem\textgreaterstitches\textless/em\textgreater in one week. \\
+sys1 & We're going to dismantle these lines in a week. \\
+sys2 & We're going to demolish these lines in a week. \\
+sys3 & We want to delete these lines a week later. \\
+sys4 & We will break these lines in a week. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table032}
+\end{table}</pre><a name="bucket3"/><h3> Examples for Bucket 3 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Does your <em>nose</em> run during the <em>headache?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Do you have a <em>nose</em> when you feel a <em>headache?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Do you also run your <em>nose</em> when you feel a <em>headache?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> When you're in pain, will you wash your teeth? </td> </tr><tr> <th> sys4 </th>
+  <td> When you feel headaches, do you also swallow your nose? </td> </tr>
+</table>
+ <br/><button onclick="showhide('033_latex')">Show/Hide LaTeX</button> <br/><pre id="033_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Does your \textlessem\textgreaternose\textless/em\textgreater run during the \textlessem\textgreaterheadache?\textless/em\textgreater \\
+sys1 & Do you have a \textlessem\textgreaternose\textless/em\textgreater when you feel a \textlessem\textgreaterheadache?\textless/em\textgreater \\
+sys2 & Do you also run your \textlessem\textgreaternose\textless/em\textgreater when you feel a \textlessem\textgreaterheadache?\textless/em\textgreater \\
+sys3 & When you're in pain, will you wash your teeth? \\
+sys4 & When you feel headaches, do you also swallow your nose? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table033}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Is your child experiencing any <em>shortness</em> of breath or <em>difficulty</em> breathing? </td> </tr><tr> <th> sys1 </th>
+  <td> Is your child suffering from <em>shortness</em> of air or <em>difficulty</em> breathing? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have <em>shortness</em> of breath or <em>difficulty</em> breathing? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your child think it's too short or too hard to breathe? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your child feel shortly breathing or breathing difficulty? </td> </tr>
+</table>
+ <br/><button onclick="showhide('034_latex')">Show/Hide LaTeX</button> <br/><pre id="034_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Is your child experiencing any \textlessem\textgreatershortness\textless/em\textgreater of breath or \textlessem\textgreaterdifficulty\textless/em\textgreater breathing? \\
+sys1 & Is your child suffering from \textlessem\textgreatershortness\textless/em\textgreater of air or \textlessem\textgreaterdifficulty\textless/em\textgreater breathing? \\
+sys2 & Do you have \textlessem\textgreatershortness\textless/em\textgreater of breath or \textlessem\textgreaterdifficulty\textless/em\textgreater breathing? \\
+sys3 & Does your child think it's too short or too hard to breathe? \\
+sys4 & Does your child feel shortly breathing or breathing difficulty? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table034}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We are all done. We will now do an <em>X-ray</em> to confirm placement. </td> </tr><tr> <th> sys1 </th>
+  <td> It's done. We're going to <em>X-ray</em> it now. </td> </tr><tr> <th> sys2 </th>
+  <td> We're done. We're going to use X-rays to determine the location. </td> </tr><tr> <th> sys3 </th>
+  <td> It's over. We're going to figure out where the X light is now. </td> </tr><tr> <th> sys4 </th>
+  <td> We will now take <em>X-ray</em> to determine the location. </td> </tr>
+</table>
+ <br/><button onclick="showhide('035_latex')">Show/Hide LaTeX</button> <br/><pre id="035_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We are all done. We will now do an \textlessem\textgreaterX-ray\textless/em\textgreater to confirm placement. \\
+sys1 & It's done. We're going to \textlessem\textgreaterX-ray\textless/em\textgreater it now. \\
+sys2 & We're done. We're going to use X-rays to determine the location. \\
+sys3 & It's over. We're going to figure out where the X light is now. \\
+sys4 & We will now take \textlessem\textgreaterX-ray\textless/em\textgreater to determine the location. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table035}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Please <em>point</em> to your abdominal pain. </td> </tr><tr> <th> sys1 </th>
+  <td> Please <em>point</em> to your abdominal pain. </td> </tr><tr> <th> sys2 </th>
+  <td> Please <em>point</em> to your abdominal pain. </td> </tr><tr> <th> sys3 </th>
+  <td> Please refer to your chest pain. </td> </tr><tr> <th> sys4 </th>
+  <td> Please indicate your stomach pain. </td> </tr>
+</table>
+ <br/><button onclick="showhide('036_latex')">Show/Hide LaTeX</button> <br/><pre id="036_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Please \textlessem\textgreaterpoint\textless/em\textgreater to your abdominal pain. \\
+sys1 & Please \textlessem\textgreaterpoint\textless/em\textgreater to your abdominal pain. \\
+sys2 & Please \textlessem\textgreaterpoint\textless/em\textgreater to your abdominal pain. \\
+sys3 & Please refer to your chest pain. \\
+sys4 & Please indicate your stomach pain. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table036}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The MRI shows evidence of skin infection or <em>inflammation.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> The MRI shows a skin infection or <em>inflammation.</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Nuclear magnetic resonance imaging shows that the skin is infected or inflamed. </td> </tr><tr> <th> sys3 </th>
+  <td> The nuclear disks show that skin is infected or diseased. </td> </tr><tr> <th> sys4 </th>
+  <td> Nuclear magnetic resonance shows the skin has an infection or <em>inflammation.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('037_latex')">Show/Hide LaTeX</button> <br/><pre id="037_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The MRI shows evidence of skin infection or \textlessem\textgreaterinflammation.\textless/em\textgreater \\
+sys1 & The MRI shows a skin infection or \textlessem\textgreaterinflammation.\textless/em\textgreater \\
+sys2 & Nuclear magnetic resonance imaging shows that the skin is infected or inflamed. \\
+sys3 & The nuclear disks show that skin is infected or diseased. \\
+sys4 & Nuclear magnetic resonance shows the skin has an infection or \textlessem\textgreaterinflammation.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table037}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> If you <em>wear</em> glasses, <em>please</em> put them on now <em>so</em> I can check your vision. </td> </tr><tr> <th> sys1 </th>
+  <td> If you <em>wear</em> glasses now, <em>please</em> put them on <em>so</em> I can check your eyesight. </td> </tr><tr> <th> sys2 </th>
+  <td> If you <em>wear</em> glasses, <em>please</em> wear glasses now <em>so</em> I can check your vision. </td> </tr><tr> <th> sys3 </th>
+  <td> If you're wearing your glasses, <em>please</em> <em>wear</em> your glasses, <em>so</em> I can check your vision. </td> </tr><tr> <th> sys4 </th>
+  <td> If you <em>wear</em> glasses, <em>please</em> wear glasses now <em>so</em> that I can check your vision. </td> </tr>
+</table>
+ <br/><button onclick="showhide('038_latex')">Show/Hide LaTeX</button> <br/><pre id="038_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & If you \textlessem\textgreaterwear\textless/em\textgreater glasses, \textlessem\textgreaterplease\textless/em\textgreater put them on now \textlessem\textgreaterso\textless/em\textgreater I can check your vision. \\
+sys1 & If you \textlessem\textgreaterwear\textless/em\textgreater glasses now, \textlessem\textgreaterplease\textless/em\textgreater put them on \textlessem\textgreaterso\textless/em\textgreater I can check your eyesight. \\
+sys2 & If you \textlessem\textgreaterwear\textless/em\textgreater glasses, \textlessem\textgreaterplease\textless/em\textgreater wear glasses now \textlessem\textgreaterso\textless/em\textgreater I can check your vision. \\
+sys3 & If you're wearing your glasses, \textlessem\textgreaterplease\textless/em\textgreater \textlessem\textgreaterwear\textless/em\textgreater your glasses, \textlessem\textgreaterso\textless/em\textgreater I can check your vision. \\
+sys4 & If you \textlessem\textgreaterwear\textless/em\textgreater glasses, \textlessem\textgreaterplease\textless/em\textgreater wear glasses now \textlessem\textgreaterso\textless/em\textgreater that I can check your vision. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table038}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Itm sorry, it did not go into the <em>right</em> place. We need to try again. </td> </tr><tr> <th> sys1 </th>
+  <td> Sorry, it's not in the <em>right</em> place. We need to try again. </td> </tr><tr> <th> sys2 </th>
+  <td> Sorry, it didn't go in the <em>right</em> place. We need to try again. </td> </tr><tr> <th> sys3 </th>
+  <td> I'm sorry it didn't enter the <em>right</em> place. </td> </tr><tr> <th> sys4 </th>
+  <td> Sorry, it didn't get in the <em>right</em> place. we need to try again. </td> </tr>
+</table>
+ <br/><button onclick="showhide('039_latex')">Show/Hide LaTeX</button> <br/><pre id="039_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Itm sorry, it did not go into the \textlessem\textgreaterright\textless/em\textgreater place. We need to try again. \\
+sys1 & Sorry, it's not in the \textlessem\textgreaterright\textless/em\textgreater place. We need to try again. \\
+sys2 & Sorry, it didn't go in the \textlessem\textgreaterright\textless/em\textgreater place. We need to try again. \\
+sys3 & I'm sorry it didn't enter the \textlessem\textgreaterright\textless/em\textgreater place. \\
+sys4 & Sorry, it didn't get in the \textlessem\textgreaterright\textless/em\textgreater place. we need to try again. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table039}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan shows evidence of emphysema, a lung <em>disease.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> The CT scan showed emphysema, a lung <em>disease.</em> </td> </tr><tr> <th> sys2 </th>
+  <td> CT scans show pneumonia, which is a lung <em>disease.</em> </td> </tr><tr> <th> sys3 </th>
+  <td> CT scans show lung cancer, which is a lung <em>disease.</em> </td> </tr><tr> <th> sys4 </th>
+  <td> CT scans show pneumonia, which is a lungs <em>disease.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('040_latex')">Show/Hide LaTeX</button> <br/><pre id="040_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The CT scan shows evidence of emphysema, a lung \textlessem\textgreaterdisease.\textless/em\textgreater \\
+sys1 & The CT scan showed emphysema, a lung \textlessem\textgreaterdisease.\textless/em\textgreater \\
+sys2 & CT scans show pneumonia, which is a lung \textlessem\textgreaterdisease.\textless/em\textgreater \\
+sys3 & CT scans show lung cancer, which is a lung \textlessem\textgreaterdisease.\textless/em\textgreater \\
+sys4 & CT scans show pneumonia, which is a lungs \textlessem\textgreaterdisease.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table040}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We will remove any dead or infected tissue to expose healthy tissue <em>so</em> your body can heal the wound. </td> </tr><tr> <th> sys1 </th>
+  <td> We will remove bad and infected tissues and expose healthy tissues <em>so</em> that your body can heal the wounds. </td> </tr><tr> <th> sys2 </th>
+  <td> We will remove dead and infected tissue and expose healthy tissue <em>so</em> that your body can heal wounds. </td> </tr><tr> <th> sys3 </th>
+  <td> We will eliminate death-threatening and infected organizations to expose healthy organizations <em>so</em> that your body can cause injury. </td> </tr><tr> <th> sys4 </th>
+  <td> We will remove bad death and infected tissues and make healthy tissues exposed <em>so</em> that your body can heal the wound. </td> </tr>
+</table>
+ <br/><button onclick="showhide('041_latex')">Show/Hide LaTeX</button> <br/><pre id="041_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We will remove any dead or infected tissue to expose healthy tissue \textlessem\textgreaterso\textless/em\textgreater your body can heal the wound. \\
+sys1 & We will remove bad and infected tissues and expose healthy tissues \textlessem\textgreaterso\textless/em\textgreater that your body can heal the wounds. \\
+sys2 & We will remove dead and infected tissue and expose healthy tissue \textlessem\textgreaterso\textless/em\textgreater that your body can heal wounds. \\
+sys3 & We will eliminate death-threatening and infected organizations to expose healthy organizations \textlessem\textgreaterso\textless/em\textgreater that your body can cause injury. \\
+sys4 & We will remove bad death and infected tissues and make healthy tissues exposed \textlessem\textgreaterso\textless/em\textgreater that your body can heal the wound. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table041}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Does the <em>headache</em> feel like a numbness? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your <em>headache</em> feel like paralysis? </td> </tr><tr> <th> sys2 </th>
+  <td> Is your <em>headache</em> a numbness? </td> </tr><tr> <th> sys3 </th>
+  <td> Is your <em>headache</em> a problem? </td> </tr><tr> <th> sys4 </th>
+  <td> Is your <em>headache</em> a feeling of swelling? </td> </tr>
+</table>
+ <br/><button onclick="showhide('042_latex')">Show/Hide LaTeX</button> <br/><pre id="042_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Does the \textlessem\textgreaterheadache\textless/em\textgreater feel like a numbness? \\
+sys1 & Does your \textlessem\textgreaterheadache\textless/em\textgreater feel like paralysis? \\
+sys2 & Is your \textlessem\textgreaterheadache\textless/em\textgreater a numbness? \\
+sys3 & Is your \textlessem\textgreaterheadache\textless/em\textgreater a problem? \\
+sys4 & Is your \textlessem\textgreaterheadache\textless/em\textgreater a feeling of swelling? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table042}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Did the double <em>vision</em> gradually get <em>worse</em> <em>over</em> <em>time?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Has your repercussion ever gotten worse? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have a serious vision? </td> </tr><tr> <th> sys3 </th>
+  <td> Has your review become more serious? </td> </tr><tr> <th> sys4 </th>
+  <td> Is your recurrence getting more serious? </td> </tr>
+</table>
+ <br/><button onclick="showhide('043_latex')">Show/Hide LaTeX</button> <br/><pre id="043_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Did the double \textlessem\textgreatervision\textless/em\textgreater gradually get \textlessem\textgreaterworse\textless/em\textgreater \textlessem\textgreaterover\textless/em\textgreater \textlessem\textgreatertime?\textless/em\textgreater \\
+sys1 & Has your repercussion ever gotten worse? \\
+sys2 & Do you have a serious vision? \\
+sys3 & Has your review become more serious? \\
+sys4 & Is your recurrence getting more serious? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table043}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Here are your prescriptions. It is <em>very</em> <em>important</em> that you pick them <em>up.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Here's your medicine. You have to get it. </td> </tr><tr> <th> sys2 </th>
+  <td> This is your medicine. You must go get your medicine. </td> </tr><tr> <th> sys3 </th>
+  <td> This is your medicine. You're going to take it. </td> </tr><tr> <th> sys4 </th>
+  <td> This is your medicine. you must take the medicine. </td> </tr>
+</table>
+ <br/><button onclick="showhide('044_latex')">Show/Hide LaTeX</button> <br/><pre id="044_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Here are your prescriptions. It is \textlessem\textgreatervery\textless/em\textgreater \textlessem\textgreaterimportant\textless/em\textgreater that you pick them \textlessem\textgreaterup.\textless/em\textgreater \\
+sys1 & Here's your medicine. You have to get it. \\
+sys2 & This is your medicine. You must go get your medicine. \\
+sys3 & This is your medicine. You're going to take it. \\
+sys4 & This is your medicine. you must take the medicine. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table044}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you have burning in your <em>genital</em> <em>area?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Do you have a burning ground for your sexual organs? </td> </tr><tr> <th> sys2 </th>
+  <td> Do your sex organs have burning spores? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your sexual organs have a burnout? </td> </tr><tr> <th> sys4 </th>
+  <td> Do your sex organs have burns? </td> </tr>
+</table>
+ <br/><button onclick="showhide('045_latex')">Show/Hide LaTeX</button> <br/><pre id="045_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you have burning in your \textlessem\textgreatergenital\textless/em\textgreater \textlessem\textgreaterarea?\textless/em\textgreater \\
+sys1 & Do you have a burning ground for your sexual organs? \\
+sys2 & Do your sex organs have burning spores? \\
+sys3 & Does your sexual organs have a burnout? \\
+sys4 & Do your sex organs have burns? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table045}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> If we do not remove the dead bowel, it can break open and release <em>stool</em> and gas into the abdomen which can make you <em>very</em> sick. </td> </tr><tr> <th> sys1 </th>
+  <td> If we don't get rid of the dead intestines, it may break and the excreta and the gas will enter your intestinal cavity, which will make your condition even worse. </td> </tr><tr> <th> sys2 </th>
+  <td> If we don't remove the dead intestine, it may crack and the feces and gas will enter your abdomen, making your </td> </tr><tr> <th> sys3 </th>
+  <td> If we don't remove the poison of death, it may break up and lead to your stomach cancer and gas, which will make your disease more severe. </td> </tr><tr> <th> sys4 </th>
+  <td> If we don&#8217;t remove the dead intestine, it may break down, and the feces and gases will enter your abdomen, which will make your condition worse. </td> </tr>
+</table>
+ <br/><button onclick="showhide('046_latex')">Show/Hide LaTeX</button> <br/><pre id="046_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & If we do not remove the dead bowel, it can break open and release \textlessem\textgreaterstool\textless/em\textgreater and gas into the abdomen which can make you \textlessem\textgreatervery\textless/em\textgreater sick. \\
+sys1 & If we don't get rid of the dead intestines, it may break and the excreta and the gas will enter your intestinal cavity, which will make your condition even worse. \\
+sys2 & If we don't remove the dead intestine, it may crack and the feces and gas will enter your abdomen, making your \\
+sys3 & If we don't remove the poison of death, it may break up and lead to your stomach cancer and gas, which will make your disease more severe. \\
+sys4 & If we don&#8217;t remove the dead intestine, it may break down, and the feces and gases will enter your abdomen, which will make your condition worse. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table046}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Your wound is <em>so</em> large that it <em>cannot</em> be closed with sutures. </td> </tr><tr> <th> sys1 </th>
+  <td> Your wound is too big to close with stitches. </td> </tr><tr> <th> sys2 </th>
+  <td> Your wound is too big to be closed with a needle. </td> </tr><tr> <th> sys3 </th>
+  <td> Your wounds are too large to be closed. </td> </tr><tr> <th> sys4 </th>
+  <td> Your wound is too big, you don&#8217;t need to close the wound with a shell. </td> </tr>
+</table>
+ <br/><button onclick="showhide('047_latex')">Show/Hide LaTeX</button> <br/><pre id="047_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Your wound is \textlessem\textgreaterso\textless/em\textgreater large that it \textlessem\textgreatercannot\textless/em\textgreater be closed with sutures. \\
+sys1 & Your wound is too big to close with stitches. \\
+sys2 & Your wound is too big to be closed with a needle. \\
+sys3 & Your wounds are too large to be closed. \\
+sys4 & Your wound is too big, you don&#8217;t need to close the wound with a shell. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table047}
+\end{table}</pre><a name="bucket4"/><h3> Examples for Bucket 4 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> How long <em>has</em> your child had constipation? </td> </tr><tr> <th> sys1 </th>
+  <td> How long did your kid's constipation last? </td> </tr><tr> <th> sys2 </th>
+  <td> How long <em>has</em> your child been constipated? </td> </tr><tr> <th> sys3 </th>
+  <td> How long <em>has</em> your child been hiding? </td> </tr><tr> <th> sys4 </th>
+  <td> How long does your child&#8217;s constipation last? </td> </tr>
+</table>
+ <br/><button onclick="showhide('048_latex')">Show/Hide LaTeX</button> <br/><pre id="048_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & How long \textlessem\textgreaterhas\textless/em\textgreater your child had constipation? \\
+sys1 & How long did your kid's constipation last? \\
+sys2 & How long \textlessem\textgreaterhas\textless/em\textgreater your child been constipated? \\
+sys3 & How long \textlessem\textgreaterhas\textless/em\textgreater your child been hiding? \\
+sys4 & How long does your child&#8217;s constipation last? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table048}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Risks of the procedure are uncommon but include the chance of bleeding or <em>infection.</em> </td> </tr><tr> <th> sys1 </th>
+  <td> The risk of treatment is not common, but there is a risk of bleeding or leaching. </td> </tr><tr> <th> sys2 </th>
+  <td> The risk of treatment is rare, but it can lead to bleeding or <em>infection.</em> </td> </tr><tr> <th> sys3 </th>
+  <td> The risk of treatment is uncommon, but there may be bleeding or <em>infection.</em> </td> </tr><tr> <th> sys4 </th>
+  <td> The risk of treatment is not common, but it is possible for bleeding or inflammation. </td> </tr>
+</table>
+ <br/><button onclick="showhide('049_latex')">Show/Hide LaTeX</button> <br/><pre id="049_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Risks of the procedure are uncommon but include the chance of bleeding or \textlessem\textgreaterinfection.\textless/em\textgreater \\
+sys1 & The risk of treatment is not common, but there is a risk of bleeding or leaching. \\
+sys2 & The risk of treatment is rare, but it can lead to bleeding or \textlessem\textgreaterinfection.\textless/em\textgreater \\
+sys3 & The risk of treatment is uncommon, but there may be bleeding or \textlessem\textgreaterinfection.\textless/em\textgreater \\
+sys4 & The risk of treatment is not common, but it is possible for bleeding or inflammation. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table049}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The ultrasound shows a <em>fluid</em> collection around the joint. </td> </tr><tr> <th> sys1 </th>
+  <td> Ultrasound tests showed a pool around the joints. </td> </tr><tr> <th> sys2 </th>
+  <td> Ultrasound examination shows <em>fluid</em> buildup around the joints. </td> </tr><tr> <th> sys3 </th>
+  <td> The ultrasound check shows that there are fluids around the line. </td> </tr><tr> <th> sys4 </th>
+  <td> Ultrasound screening shows a <em>fluid</em> around the joints. </td> </tr>
+</table>
+ <br/><button onclick="showhide('050_latex')">Show/Hide LaTeX</button> <br/><pre id="050_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The ultrasound shows a \textlessem\textgreaterfluid\textless/em\textgreater collection around the joint. \\
+sys1 & Ultrasound tests showed a pool around the joints. \\
+sys2 & Ultrasound examination shows \textlessem\textgreaterfluid\textless/em\textgreater buildup around the joints. \\
+sys3 & The ultrasound check shows that there are fluids around the line. \\
+sys4 & Ultrasound screening shows a \textlessem\textgreaterfluid\textless/em\textgreater around the joints. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table050}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>There</em> are stitches in the eyelid which we will remove at a future visit. </td> </tr><tr> <th> sys1 </th>
+  <td> There's a thread in the eye, and we'll remove it later. </td> </tr><tr> <th> sys2 </th>
+  <td> <em>There</em> are traces of tears in my eyes, and we will remove them later. </td> </tr><tr> <th> sys3 </th>
+  <td> And there are signs in the eyes, and then We will remove them. </td> </tr><tr> <th> sys4 </th>
+  <td> <em>There</em> are signs in the eyelids, and then we will remove them. </td> </tr>
+</table>
+ <br/><button onclick="showhide('051_latex')">Show/Hide LaTeX</button> <br/><pre id="051_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterThere\textless/em\textgreater are stitches in the eyelid which we will remove at a future visit. \\
+sys1 & There's a thread in the eye, and we'll remove it later. \\
+sys2 & \textlessem\textgreaterThere\textless/em\textgreater are traces of tears in my eyes, and we will remove them later. \\
+sys3 & And there are signs in the eyes, and then We will remove them. \\
+sys4 & \textlessem\textgreaterThere\textless/em\textgreater are signs in the eyelids, and then we will remove them. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table051}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Can you <em>show</em> it to me? </td> </tr><tr> <th> sys1 </th>
+  <td> Can you <em>show</em> me? </td> </tr><tr> <th> sys2 </th>
+  <td> Can you give an example? </td> </tr><tr> <th> sys3 </th>
+  <td> Can you sample it? </td> </tr><tr> <th> sys4 </th>
+  <td> Can you <em>show</em> it? </td> </tr>
+</table>
+ <br/><button onclick="showhide('052_latex')">Show/Hide LaTeX</button> <br/><pre id="052_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Can you \textlessem\textgreatershow\textless/em\textgreater it to me? \\
+sys1 & Can you \textlessem\textgreatershow\textless/em\textgreater me? \\
+sys2 & Can you give an example? \\
+sys3 & Can you sample it? \\
+sys4 & Can you \textlessem\textgreatershow\textless/em\textgreater it? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table052}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We recommend removing the appendix <em>before</em> the <em>infection</em> gets worse and ruptures. </td> </tr><tr> <th> sys1 </th>
+  <td> We recommend that the appendix be removed <em>before</em> the <em>infection</em> deteriorates and the aphid gas occurs. </td> </tr><tr> <th> sys2 </th>
+  <td> We recommend that the tail be removed <em>before</em> the <em>infection</em> gets worse and the tail is blown. </td> </tr><tr> <th> sys3 </th>
+  <td> We recommend that the end of the outbreak be eliminated <em>before</em> the <em>infection</em> is worse and there is a hurricane. </td> </tr><tr> <th> sys4 </th>
+  <td> We recommend removal <em>before</em> the <em>infection</em> becomes worse and the epilepsy occurs. </td> </tr>
+</table>
+ <br/><button onclick="showhide('053_latex')">Show/Hide LaTeX</button> <br/><pre id="053_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We recommend removing the appendix \textlessem\textgreaterbefore\textless/em\textgreater the \textlessem\textgreaterinfection\textless/em\textgreater gets worse and ruptures. \\
+sys1 & We recommend that the appendix be removed \textlessem\textgreaterbefore\textless/em\textgreater the \textlessem\textgreaterinfection\textless/em\textgreater deteriorates and the aphid gas occurs. \\
+sys2 & We recommend that the tail be removed \textlessem\textgreaterbefore\textless/em\textgreater the \textlessem\textgreaterinfection\textless/em\textgreater gets worse and the tail is blown. \\
+sys3 & We recommend that the end of the outbreak be eliminated \textlessem\textgreaterbefore\textless/em\textgreater the \textlessem\textgreaterinfection\textless/em\textgreater is worse and there is a hurricane. \\
+sys4 & We recommend removal \textlessem\textgreaterbefore\textless/em\textgreater the \textlessem\textgreaterinfection\textless/em\textgreater becomes worse and the epilepsy occurs. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table053}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Has your child been more itchy <em>than</em> usual? </td> </tr><tr> <th> sys1 </th>
+  <td> Is it easier for your kid to itch <em>than</em> usual? </td> </tr><tr> <th> sys2 </th>
+  <td> Are your children more prone to vomiting <em>than</em> usual? </td> </tr><tr> <th> sys3 </th>
+  <td> Is your child easier to walk <em>than</em> you are? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your child get more sick <em>than</em> usual? </td> </tr>
+</table>
+ <br/><button onclick="showhide('054_latex')">Show/Hide LaTeX</button> <br/><pre id="054_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Has your child been more itchy \textlessem\textgreaterthan\textless/em\textgreater usual? \\
+sys1 & Is it easier for your kid to itch \textlessem\textgreaterthan\textless/em\textgreater usual? \\
+sys2 & Are your children more prone to vomiting \textlessem\textgreaterthan\textless/em\textgreater usual? \\
+sys3 & Is your child easier to walk \textlessem\textgreaterthan\textless/em\textgreater you are? \\
+sys4 & Does your child get more sick \textlessem\textgreaterthan\textless/em\textgreater usual? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table054}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you have <em>chest</em> pain? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your <em>chest</em> hurt? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have <em>chest</em> pain? </td> </tr><tr> <th> sys3 </th>
+  <td> Will your <em>chest</em> hurt? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your <em>chest</em> hurt? </td> </tr>
+</table>
+ <br/><button onclick="showhide('055_latex')">Show/Hide LaTeX</button> <br/><pre id="055_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you have \textlessem\textgreaterchest\textless/em\textgreater pain? \\
+sys1 & Does your \textlessem\textgreaterchest\textless/em\textgreater hurt? \\
+sys2 & Do you have \textlessem\textgreaterchest\textless/em\textgreater pain? \\
+sys3 & Will your \textlessem\textgreaterchest\textless/em\textgreater hurt? \\
+sys4 & Does your \textlessem\textgreaterchest\textless/em\textgreater hurt? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table055}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Did the mother have any infections <em>during</em> the pregnancy? </td> </tr><tr> <th> sys1 </th>
+  <td> Does the mother have any symptoms of infection <em>during</em> pregnancy? </td> </tr><tr> <th> sys2 </th>
+  <td> Did the mother have any symptoms of infection <em>during</em> pregnancy? </td> </tr><tr> <th> sys3 </th>
+  <td> Did Mother have any symptoms of infection <em>during</em> pregnancy? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you have any infectious symptoms <em>during</em> pregnancy? </td> </tr>
+</table>
+ <br/><button onclick="showhide('056_latex')">Show/Hide LaTeX</button> <br/><pre id="056_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Did the mother have any infections \textlessem\textgreaterduring\textless/em\textgreater the pregnancy? \\
+sys1 & Does the mother have any symptoms of infection \textlessem\textgreaterduring\textless/em\textgreater pregnancy? \\
+sys2 & Did the mother have any symptoms of infection \textlessem\textgreaterduring\textless/em\textgreater pregnancy? \\
+sys3 & Did Mother have any symptoms of infection \textlessem\textgreaterduring\textless/em\textgreater pregnancy? \\
+sys4 & Do you have any infectious symptoms \textlessem\textgreaterduring\textless/em\textgreater pregnancy? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table056}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Were there any complications <em>during</em> the at the delivery? </td> </tr><tr> <th> sys1 </th>
+  <td> Were there any complications <em>during</em> childbirth? </td> </tr><tr> <th> sys2 </th>
+  <td> Did you have any complications <em>during</em> childbirth? </td> </tr><tr> <th> sys3 </th>
+  <td> Is there any disease <em>during</em> separation? </td> </tr><tr> <th> sys4 </th>
+  <td> Are there any complications <em>during</em> childbirth? </td> </tr>
+</table>
+ <br/><button onclick="showhide('057_latex')">Show/Hide LaTeX</button> <br/><pre id="057_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Were there any complications \textlessem\textgreaterduring\textless/em\textgreater the at the delivery? \\
+sys1 & Were there any complications \textlessem\textgreaterduring\textless/em\textgreater childbirth? \\
+sys2 & Did you have any complications \textlessem\textgreaterduring\textless/em\textgreater childbirth? \\
+sys3 & Is there any disease \textlessem\textgreaterduring\textless/em\textgreater separation? \\
+sys4 & Are there any complications \textlessem\textgreaterduring\textless/em\textgreater childbirth? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table057}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> You <em>should</em> not feel a <em>lot</em> of pain from this. </td> </tr><tr> <th> sys1 </th>
+  <td> You shouldn't feel too much pain from it. </td> </tr><tr> <th> sys2 </th>
+  <td> You shouldn't feel too much pain from it. </td> </tr><tr> <th> sys3 </th>
+  <td> You shouldn't feel too much pain from this. </td> </tr><tr> <th> sys4 </th>
+  <td> You shouldn&#8217;t feel too much pain resulting from this. </td> </tr>
+</table>
+ <br/><button onclick="showhide('058_latex')">Show/Hide LaTeX</button> <br/><pre id="058_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & You \textlessem\textgreatershould\textless/em\textgreater not feel a \textlessem\textgreaterlot\textless/em\textgreater of pain from this. \\
+sys1 & You shouldn't feel too much pain from it. \\
+sys2 & You shouldn't feel too much pain from it. \\
+sys3 & You shouldn't feel too much pain from this. \\
+sys4 & You shouldn&#8217;t feel too much pain resulting from this. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table058}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Benefits include relief of the blockage and allowing us to take <em>out</em> extra <em>fluid</em> and also give treatments and nutrition. </td> </tr><tr> <th> sys1 </th>
+  <td> Benefits include the ability to ease congestion and allow us to remove excess liquids, as well as treatment and inclusion of nutrient components. </td> </tr><tr> <th> sys2 </th>
+  <td> The benefits include relieving blockages and allowing us to remove excess fluids, as well as being able to treat and add </td> </tr><tr> <th> sys3 </th>
+  <td> The benefits include reducing inhibitions and enabling us to extract excess fluids and also treating and contributing to nutrition. </td> </tr><tr> <th> sys4 </th>
+  <td> The benefits include that it can relieve blocks and allow us to remove excess fluids, and it can also be treated and added to nutrients. </td> </tr>
+</table>
+ <br/><button onclick="showhide('059_latex')">Show/Hide LaTeX</button> <br/><pre id="059_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Benefits include relief of the blockage and allowing us to take \textlessem\textgreaterout\textless/em\textgreater extra \textlessem\textgreaterfluid\textless/em\textgreater and also give treatments and nutrition. \\
+sys1 & Benefits include the ability to ease congestion and allow us to remove excess liquids, as well as treatment and inclusion of nutrient components. \\
+sys2 & The benefits include relieving blockages and allowing us to remove excess fluids, as well as being able to treat and add \\
+sys3 & The benefits include reducing inhibitions and enabling us to extract excess fluids and also treating and contributing to nutrition. \\
+sys4 & The benefits include that it can relieve blocks and allow us to remove excess fluids, and it can also be treated and added to nutrients. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table059}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Your sonogram shows an empty sac in the uterus. We do not know if this will become a <em>normal</em> pregnancy or an <em>abnormal</em> pregnancy. </td> </tr><tr> <th> sys1 </th>
+  <td> Acoustic maps show an empty pregnancy bag in the womb, and we don't know if it's normal. </td> </tr><tr> <th> sys2 </th>
+  <td> The ultrasound shows an empty sac inside the uterus, and we don't know if it is normal. </td> </tr><tr> <th> sys3 </th>
+  <td> Vodka shows that there's an empty pregnancy in the womb, and we don't know if it's normal. </td> </tr><tr> <th> sys4 </th>
+  <td> The sound picture shows that there is an empty pregnancy box inside the uterus and we don&#8217;t know if this pregnancy box is normal. </td> </tr>
+</table>
+ <br/><button onclick="showhide('060_latex')">Show/Hide LaTeX</button> <br/><pre id="060_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Your sonogram shows an empty sac in the uterus. We do not know if this will become a \textlessem\textgreaternormal\textless/em\textgreater pregnancy or an \textlessem\textgreaterabnormal\textless/em\textgreater pregnancy. \\
+sys1 & Acoustic maps show an empty pregnancy bag in the womb, and we don't know if it's normal. \\
+sys2 & The ultrasound shows an empty sac inside the uterus, and we don't know if it is normal. \\
+sys3 & Vodka shows that there's an empty pregnancy in the womb, and we don't know if it's normal. \\
+sys4 & The sound picture shows that there is an empty pregnancy box inside the uterus and we don&#8217;t know if this pregnancy box is normal. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table060}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We need to remove those stitches in <em>one</em> week. </td> </tr><tr> <th> sys1 </th>
+  <td> We're going to dismantle these lines in a week. </td> </tr><tr> <th> sys2 </th>
+  <td> We're going to demolish these lines in a week. </td> </tr><tr> <th> sys3 </th>
+  <td> We want to delete these lines a week later. </td> </tr><tr> <th> sys4 </th>
+  <td> We will break these lines in a week. </td> </tr>
+</table>
+ <br/><button onclick="showhide('061_latex')">Show/Hide LaTeX</button> <br/><pre id="061_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We need to remove those stitches in \textlessem\textgreaterone\textless/em\textgreater week. \\
+sys1 & We're going to dismantle these lines in a week. \\
+sys2 & We're going to demolish these lines in a week. \\
+sys3 & We want to delete these lines a week later. \\
+sys4 & We will break these lines in a week. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table061}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Does your child's nose run <em>during</em> the headache? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your kid have a nose when he has a headache? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have a sore nose when your child has a headache? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your child have a nose when you're crying? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your child swallow your nose when headaches? </td> </tr>
+</table>
+ <br/><button onclick="showhide('062_latex')">Show/Hide LaTeX</button> <br/><pre id="062_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Does your child's nose run \textlessem\textgreaterduring\textless/em\textgreater the headache? \\
+sys1 & Does your kid have a nose when he has a headache? \\
+sys2 & Do you have a sore nose when your child has a headache? \\
+sys3 & Does your child have a nose when you're crying? \\
+sys4 & Does your child swallow your nose when headaches? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table062}
+\end{table}</pre><a name="bucket5"/><h3> Examples for Bucket [5,10) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Have you been to any prisons or homeless shelters <em>recently?</em> </td> </tr><tr> <th> sys1 </th>
+  <td> Have you been to any prison or homeless shelter <em>recently?</em> </td> </tr><tr> <th> sys2 </th>
+  <td> Have you been to any prison or homeless shelter <em>recently?</em> </td> </tr><tr> <th> sys3 </th>
+  <td> Have you recently gone to any prison or homeless shelter? </td> </tr><tr> <th> sys4 </th>
+  <td> Have you recently gone to any prison or home-free residence? </td> </tr>
+</table>
+ <br/><button onclick="showhide('063_latex')">Show/Hide LaTeX</button> <br/><pre id="063_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Have you been to any prisons or homeless shelters \textlessem\textgreaterrecently?\textless/em\textgreater \\
+sys1 & Have you been to any prison or homeless shelter \textlessem\textgreaterrecently?\textless/em\textgreater \\
+sys2 & Have you been to any prison or homeless shelter \textlessem\textgreaterrecently?\textless/em\textgreater \\
+sys3 & Have you recently gone to any prison or homeless shelter? \\
+sys4 & Have you recently gone to any prison or home-free residence? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table063}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Has your child been <em>more</em> itchy than usual? </td> </tr><tr> <th> sys1 </th>
+  <td> Is it easier for your kid to itch than usual? </td> </tr><tr> <th> sys2 </th>
+  <td> Are your children <em>more</em> prone to vomiting than usual? </td> </tr><tr> <th> sys3 </th>
+  <td> Is your child easier to walk than you are? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your child get <em>more</em> sick than usual? </td> </tr>
+</table>
+ <br/><button onclick="showhide('064_latex')">Show/Hide LaTeX</button> <br/><pre id="064_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Has your child been \textlessem\textgreatermore\textless/em\textgreater itchy than usual? \\
+sys1 & Is it easier for your kid to itch than usual? \\
+sys2 & Are your children \textlessem\textgreatermore\textless/em\textgreater prone to vomiting than usual? \\
+sys3 & Is your child easier to walk than you are? \\
+sys4 & Does your child get \textlessem\textgreatermore\textless/em\textgreater sick than usual? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table064}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you need <em>medication</em> for your psychiatric condition? </td> </tr><tr> <th> sys1 </th>
+  <td> You need <em>medication</em> for your psychosis? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you need <em>medication</em> to treat your symptoms? </td> </tr><tr> <th> sys3 </th>
+  <td> You need a cure for your mental illness? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you need medications to treat your psychiatric symptoms? </td> </tr>
+</table>
+ <br/><button onclick="showhide('065_latex')">Show/Hide LaTeX</button> <br/><pre id="065_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you need \textlessem\textgreatermedication\textless/em\textgreater for your psychiatric condition? \\
+sys1 & You need \textlessem\textgreatermedication\textless/em\textgreater for your psychosis? \\
+sys2 & Do you need \textlessem\textgreatermedication\textless/em\textgreater to treat your symptoms? \\
+sys3 & You need a cure for your mental illness? \\
+sys4 & Do you need medications to treat your psychiatric symptoms? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table065}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Have you had a stress test? <em>If</em> so, when? </td> </tr><tr> <th> sys1 </th>
+  <td> Have you ever been tested for stress? <em>If</em> so, when? </td> </tr><tr> <th> sys2 </th>
+  <td> Have you ever had a stress test and if so, when? </td> </tr><tr> <th> sys3 </th>
+  <td> Have you accepted a test? <em>If</em> so, when? </td> </tr><tr> <th> sys4 </th>
+  <td> Have you had a pressure test? if so, when? </td> </tr>
+</table>
+ <br/><button onclick="showhide('066_latex')">Show/Hide LaTeX</button> <br/><pre id="066_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Have you had a stress test? \textlessem\textgreaterIf\textless/em\textgreater so, when? \\
+sys1 & Have you ever been tested for stress? \textlessem\textgreaterIf\textless/em\textgreater so, when? \\
+sys2 & Have you ever had a stress test and if so, when? \\
+sys3 & Have you accepted a test? \textlessem\textgreaterIf\textless/em\textgreater so, when? \\
+sys4 & Have you had a pressure test? if so, when? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table066}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Have you <em>ever</em> had a C-section? </td> </tr><tr> <th> sys1 </th>
+  <td> Have you <em>ever</em> had a C-section before? </td> </tr><tr> <th> sys2 </th>
+  <td> Have you had a cesarean section before? </td> </tr><tr> <th> sys3 </th>
+  <td> Have you <em>ever</em> been so jealous before? </td> </tr><tr> <th> sys4 </th>
+  <td> Have you had an anatomy before? </td> </tr>
+</table>
+ <br/><button onclick="showhide('067_latex')">Show/Hide LaTeX</button> <br/><pre id="067_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Have you \textlessem\textgreaterever\textless/em\textgreater had a C-section? \\
+sys1 & Have you \textlessem\textgreaterever\textless/em\textgreater had a C-section before? \\
+sys2 & Have you had a cesarean section before? \\
+sys3 & Have you \textlessem\textgreaterever\textless/em\textgreater been so jealous before? \\
+sys4 & Have you had an anatomy before? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table067}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>If</em> we find the cause of your symptoms, we will fix it <em>but</em> it is possible that everything will <em>look</em> normal inside. </td> </tr><tr> <th> sys1 </th>
+  <td> <em>If</em> we find out why you're sick, we'll deal with it, <em>but</em> it'll probably <em>look</em> normal inside. </td> </tr><tr> <th> sys2 </th>
+  <td> <em>If</em> we find the cause of your illness, we will treat it, <em>but</em> it is also possible that everything will <em>look</em> normal inside. </td> </tr><tr> <th> sys3 </th>
+  <td> <em>If</em> we find the cause of your illness, we will handle it, <em>but</em> there may also be a possibility that everything will <em>look</em> normal. </td> </tr><tr> <th> sys4 </th>
+  <td> <em>If</em> we find the cause of your illness, we will be treated, <em>but</em> it is also possible that everything in it will <em>look</em> normal. </td> </tr>
+</table>
+ <br/><button onclick="showhide('068_latex')">Show/Hide LaTeX</button> <br/><pre id="068_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterIf\textless/em\textgreater we find the cause of your symptoms, we will fix it \textlessem\textgreaterbut\textless/em\textgreater it is possible that everything will \textlessem\textgreaterlook\textless/em\textgreater normal inside. \\
+sys1 & \textlessem\textgreaterIf\textless/em\textgreater we find out why you're sick, we'll deal with it, \textlessem\textgreaterbut\textless/em\textgreater it'll probably \textlessem\textgreaterlook\textless/em\textgreater normal inside. \\
+sys2 & \textlessem\textgreaterIf\textless/em\textgreater we find the cause of your illness, we will treat it, \textlessem\textgreaterbut\textless/em\textgreater it is also possible that everything will \textlessem\textgreaterlook\textless/em\textgreater normal inside. \\
+sys3 & \textlessem\textgreaterIf\textless/em\textgreater we find the cause of your illness, we will handle it, \textlessem\textgreaterbut\textless/em\textgreater there may also be a possibility that everything will \textlessem\textgreaterlook\textless/em\textgreater normal. \\
+sys4 & \textlessem\textgreaterIf\textless/em\textgreater we find the cause of your illness, we will be treated, \textlessem\textgreaterbut\textless/em\textgreater it is also possible that everything in it will \textlessem\textgreaterlook\textless/em\textgreater normal. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table068}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>How</em> <em>many</em> times per week do you forget to take the medication? </td> </tr><tr> <th> sys1 </th>
+  <td> <em>How</em> <em>many</em> times a week do you forget to take your medication? </td> </tr><tr> <th> sys2 </th>
+  <td> <em>How</em> <em>many</em> times a week do you forget to take your medication? </td> </tr><tr> <th> sys3 </th>
+  <td> <em>How</em> <em>many</em> times do you forget to use drugs every week? </td> </tr><tr> <th> sys4 </th>
+  <td> <em>How</em> <em>many</em> times a week do you forget to take the drug? </td> </tr>
+</table>
+ <br/><button onclick="showhide('069_latex')">Show/Hide LaTeX</button> <br/><pre id="069_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterHow\textless/em\textgreater \textlessem\textgreatermany\textless/em\textgreater times per week do you forget to take the medication? \\
+sys1 & \textlessem\textgreaterHow\textless/em\textgreater \textlessem\textgreatermany\textless/em\textgreater times a week do you forget to take your medication? \\
+sys2 & \textlessem\textgreaterHow\textless/em\textgreater \textlessem\textgreatermany\textless/em\textgreater times a week do you forget to take your medication? \\
+sys3 & \textlessem\textgreaterHow\textless/em\textgreater \textlessem\textgreatermany\textless/em\textgreater times do you forget to use drugs every week? \\
+sys4 & \textlessem\textgreaterHow\textless/em\textgreater \textlessem\textgreatermany\textless/em\textgreater times a week do you forget to take the drug? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table069}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Did it last <em>less</em> than an hour? </td> </tr><tr> <th> sys1 </th>
+  <td> The effect disappeared in <em>less</em> than an hour? </td> </tr><tr> <th> sys2 </th>
+  <td> The effect disappeared in <em>less</em> than an hour? </td> </tr><tr> <th> sys3 </th>
+  <td> The effect is gone in <em>less</em> than an hour? </td> </tr><tr> <th> sys4 </th>
+  <td> The effect disappears in <em>less</em> than a minute. </td> </tr>
+</table>
+ <br/><button onclick="showhide('070_latex')">Show/Hide LaTeX</button> <br/><pre id="070_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Did it last \textlessem\textgreaterless\textless/em\textgreater than an hour? \\
+sys1 & The effect disappeared in \textlessem\textgreaterless\textless/em\textgreater than an hour? \\
+sys2 & The effect disappeared in \textlessem\textgreaterless\textless/em\textgreater than an hour? \\
+sys3 & The effect is gone in \textlessem\textgreaterless\textless/em\textgreater than an hour? \\
+sys4 & The effect disappears in \textlessem\textgreaterless\textless/em\textgreater than a minute. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table070}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Have you been <em>diagnosed</em> with Hepatitis C? </td> </tr><tr> <th> sys1 </th>
+  <td> Are you <em>diagnosed</em> with hepatitis? </td> </tr><tr> <th> sys2 </th>
+  <td> Have you been <em>diagnosed</em> with hepatitis? </td> </tr><tr> <th> sys3 </th>
+  <td> Are you <em>diagnosed</em> as having cancer? </td> </tr><tr> <th> sys4 </th>
+  <td> Are you <em>diagnosed</em> with hepatitis? </td> </tr>
+</table>
+ <br/><button onclick="showhide('071_latex')">Show/Hide LaTeX</button> <br/><pre id="071_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Have you been \textlessem\textgreaterdiagnosed\textless/em\textgreater with Hepatitis C? \\
+sys1 & Are you \textlessem\textgreaterdiagnosed\textless/em\textgreater with hepatitis? \\
+sys2 & Have you been \textlessem\textgreaterdiagnosed\textless/em\textgreater with hepatitis? \\
+sys3 & Are you \textlessem\textgreaterdiagnosed\textless/em\textgreater as having cancer? \\
+sys4 & Are you \textlessem\textgreaterdiagnosed\textless/em\textgreater with hepatitis? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table071}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> You are <em>now</em> fully dilated. </td> </tr><tr> <th> sys1 </th>
+  <td> You're <em>now</em> completely expanded. </td> </tr><tr> <th> sys2 </th>
+  <td> You are <em>now</em> fully expanded. </td> </tr><tr> <th> sys3 </th>
+  <td> You are <em>now</em> fully expanded. </td> </tr><tr> <th> sys4 </th>
+  <td> You are <em>now</em> fully expanded. </td> </tr>
+</table>
+ <br/><button onclick="showhide('072_latex')">Show/Hide LaTeX</button> <br/><pre id="072_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & You are \textlessem\textgreaternow\textless/em\textgreater fully dilated. \\
+sys1 & You're \textlessem\textgreaternow\textless/em\textgreater completely expanded. \\
+sys2 & You are \textlessem\textgreaternow\textless/em\textgreater fully expanded. \\
+sys3 & You are \textlessem\textgreaternow\textless/em\textgreater fully expanded. \\
+sys4 & You are \textlessem\textgreaternow\textless/em\textgreater fully expanded. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table072}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The <em>ultrasound</em> shows <em>there</em> <em>may</em> <em>be</em> retained products of conception in the uterus. </td> </tr><tr> <th> sys1 </th>
+  <td> Ultrasound shows uterus residual products that cause conception. </td> </tr><tr> <th> sys2 </th>
+  <td> Ultrasound shows the residual product that causes pregnancy in the womb. </td> </tr><tr> <th> sys3 </th>
+  <td> The supervoice shows products that remain in the cells that cause pregnancy. </td> </tr><tr> <th> sys4 </th>
+  <td> Ultrasound shows the remains in the uterus that cause pregnancy. </td> </tr>
+</table>
+ <br/><button onclick="showhide('073_latex')">Show/Hide LaTeX</button> <br/><pre id="073_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The \textlessem\textgreaterultrasound\textless/em\textgreater shows \textlessem\textgreaterthere\textless/em\textgreater \textlessem\textgreatermay\textless/em\textgreater \textlessem\textgreaterbe\textless/em\textgreater retained products of conception in the uterus. \\
+sys1 & Ultrasound shows uterus residual products that cause conception. \\
+sys2 & Ultrasound shows the residual product that causes pregnancy in the womb. \\
+sys3 & The supervoice shows products that remain in the cells that cause pregnancy. \\
+sys4 & Ultrasound shows the remains in the uterus that cause pregnancy. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table073}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Do you think you <em>may</em> <em>be</em> pregnant? </td> </tr><tr> <th> sys1 </th>
+  <td> Do you think you're pregnant? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you think you are pregnant? </td> </tr><tr> <th> sys3 </th>
+  <td> You think you're pregnant? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you think you are pregnant? </td> </tr>
+</table>
+ <br/><button onclick="showhide('074_latex')">Show/Hide LaTeX</button> <br/><pre id="074_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Do you think you \textlessem\textgreatermay\textless/em\textgreater \textlessem\textgreaterbe\textless/em\textgreater pregnant? \\
+sys1 & Do you think you're pregnant? \\
+sys2 & Do you think you are pregnant? \\
+sys3 & You think you're pregnant? \\
+sys4 & Do you think you are pregnant? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table074}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> I <em>am</em> going to numb the skin first to make this <em>less</em> painful. </td> </tr><tr> <th> sys1 </th>
+  <td> I'll lose my skin first so it doesn't hurt so much. </td> </tr><tr> <th> sys2 </th>
+  <td> I'll make my skin lose consciousness and it won't hurt that much. </td> </tr><tr> <th> sys3 </th>
+  <td> I'm going to let the skin get lost before I realize it's not that bad. </td> </tr><tr> <th> sys4 </th>
+  <td> I&#8217;ll first let my skin lose consciousness so it&#8217;s not so painful. </td> </tr>
+</table>
+ <br/><button onclick="showhide('075_latex')">Show/Hide LaTeX</button> <br/><pre id="075_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & I \textlessem\textgreateram\textless/em\textgreater going to numb the skin first to make this \textlessem\textgreaterless\textless/em\textgreater painful. \\
+sys1 & I'll lose my skin first so it doesn't hurt so much. \\
+sys2 & I'll make my skin lose consciousness and it won't hurt that much. \\
+sys3 & I'm going to let the skin get lost before I realize it's not that bad. \\
+sys4 & I&#8217;ll first let my skin lose consciousness so it&#8217;s not so painful. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table075}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> It is important that we start steroids to prevent vision loss in the other eye <em>as</em> well. You will need a temporal artery biopsy <em>as</em> well. </td> </tr><tr> <th> sys1 </th>
+  <td> It's important that we start using steroids to prevent vision loss in other eyes. You need an arterial biopsy. </td> </tr><tr> <th> sys2 </th>
+  <td> It is very important that we start using steroids to prevent other eyes from losing their vision. </td> </tr><tr> <th> sys3 </th>
+  <td> It's very important that we start using the category to prevent the loss of vision of other eyes. You need a motion test. </td> </tr><tr> <th> sys4 </th>
+  <td> We start using steroids to prevent the loss of vision of other eyes is very important. you need a pulmonary artery test. </td> </tr>
+</table>
+ <br/><button onclick="showhide('076_latex')">Show/Hide LaTeX</button> <br/><pre id="076_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & It is important that we start steroids to prevent vision loss in the other eye \textlessem\textgreateras\textless/em\textgreater well. You will need a temporal artery biopsy \textlessem\textgreateras\textless/em\textgreater well. \\
+sys1 & It's important that we start using steroids to prevent vision loss in other eyes. You need an arterial biopsy. \\
+sys2 & It is very important that we start using steroids to prevent other eyes from losing their vision. \\
+sys3 & It's very important that we start using the category to prevent the loss of vision of other eyes. You need a motion test. \\
+sys4 & We start using steroids to prevent the loss of vision of other eyes is very important. you need a pulmonary artery test. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table076}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Are you <em>experiencing</em> any shortness of <em>breath</em> or difficulty breathing? </td> </tr><tr> <th> sys1 </th>
+  <td> You think you can't breathe or you can't breathe? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have difficulty breathing or breathing? </td> </tr><tr> <th> sys3 </th>
+  <td> Do you think it's too cold or it's hard to breathe? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you feel breathless or have breathing difficulties? </td> </tr>
+</table>
+ <br/><button onclick="showhide('077_latex')">Show/Hide LaTeX</button> <br/><pre id="077_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Are you \textlessem\textgreaterexperiencing\textless/em\textgreater any shortness of \textlessem\textgreaterbreath\textless/em\textgreater or difficulty breathing? \\
+sys1 & You think you can't breathe or you can't breathe? \\
+sys2 & Do you have difficulty breathing or breathing? \\
+sys3 & Do you think it's too cold or it's hard to breathe? \\
+sys4 & Do you feel breathless or have breathing difficulties? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table077}
+\end{table}</pre><a name="bucket6"/><h3> Examples for Bucket [10,100) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Is</em> your <em>child</em> allergic to eggs? </td> </tr><tr> <th> sys1 </th>
+  <td> Are your kids allergic to eggs? </td> </tr><tr> <th> sys2 </th>
+  <td> Are your children allergic to eggs? </td> </tr><tr> <th> sys3 </th>
+  <td> <em>Is</em> your <em>child</em> too sensitive to chicken? </td> </tr><tr> <th> sys4 </th>
+  <td> <em>Is</em> your <em>child</em> allergic to eggs? </td> </tr>
+</table>
+ <br/><button onclick="showhide('078_latex')">Show/Hide LaTeX</button> <br/><pre id="078_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterIs\textless/em\textgreater your \textlessem\textgreaterchild\textless/em\textgreater allergic to eggs? \\
+sys1 & Are your kids allergic to eggs? \\
+sys2 & Are your children allergic to eggs? \\
+sys3 & \textlessem\textgreaterIs\textless/em\textgreater your \textlessem\textgreaterchild\textless/em\textgreater too sensitive to chicken? \\
+sys4 & \textlessem\textgreaterIs\textless/em\textgreater your \textlessem\textgreaterchild\textless/em\textgreater allergic to eggs? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table078}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>The</em> vitamin D level was normal. </td> </tr><tr> <th> sys1 </th>
+  <td> Vitamin levels are normal. </td> </tr><tr> <th> sys2 </th>
+  <td> <em>The</em> level of mortality is normal. </td> </tr><tr> <th> sys3 </th>
+  <td> <em>The</em> standard of living is normal. </td> </tr><tr> <th> sys4 </th>
+  <td> Vitamins are normal. </td> </tr>
+</table>
+ <br/><button onclick="showhide('079_latex')">Show/Hide LaTeX</button> <br/><pre id="079_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterThe\textless/em\textgreater vitamin D level was normal. \\
+sys1 & Vitamin levels are normal. \\
+sys2 & \textlessem\textgreaterThe\textless/em\textgreater level of mortality is normal. \\
+sys3 & \textlessem\textgreaterThe\textless/em\textgreater standard of living is normal. \\
+sys4 & Vitamins are normal. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table079}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Hello, <em>I</em> am your child's physical therapist. </td> </tr><tr> <th> sys1 </th>
+  <td> Hi, I'm your kid's physiotherapist. </td> </tr><tr> <th> sys2 </th>
+  <td> Hello, <em>I</em> am your child's physical therapist. </td> </tr><tr> <th> sys3 </th>
+  <td> Hi, I'm your child's physical therapist. </td> </tr><tr> <th> sys4 </th>
+  <td> Hello, <em>I</em> am your child's physiotherapist. </td> </tr>
+</table>
+ <br/><button onclick="showhide('080_latex')">Show/Hide LaTeX</button> <br/><pre id="080_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Hello, \textlessem\textgreaterI\textless/em\textgreater am your child's physical therapist. \\
+sys1 & Hi, I'm your kid's physiotherapist. \\
+sys2 & Hello, \textlessem\textgreaterI\textless/em\textgreater am your child's physical therapist. \\
+sys3 & Hi, I'm your child's physical therapist. \\
+sys4 & Hello, \textlessem\textgreaterI\textless/em\textgreater am your child's physiotherapist. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table080}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Is</em> the droopy eyelid new? </td> </tr><tr> <th> sys1 </th>
+  <td> <em>Is</em> the lower eyelids new? </td> </tr><tr> <th> sys2 </th>
+  <td> <em>Is</em> the tear coming down new? </td> </tr><tr> <th> sys3 </th>
+  <td> Did the eyes of the lower eye ever show up? </td> </tr><tr> <th> sys4 </th>
+  <td> Are the low-covered eyelids new? </td> </tr>
+</table>
+ <br/><button onclick="showhide('081_latex')">Show/Hide LaTeX</button> <br/><pre id="081_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterIs\textless/em\textgreater the droopy eyelid new? \\
+sys1 & \textlessem\textgreaterIs\textless/em\textgreater the lower eyelids new? \\
+sys2 & \textlessem\textgreaterIs\textless/em\textgreater the tear coming down new? \\
+sys3 & Did the eyes of the lower eye ever show up? \\
+sys4 & Are the low-covered eyelids new? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table081}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> How many glasses <em>of</em> water <em>do</em> you drink each day? </td> </tr><tr> <th> sys1 </th>
+  <td> How many cups <em>of</em> water <em>do</em> you drink every day? </td> </tr><tr> <th> sys2 </th>
+  <td> How many glasses <em>of</em> water <em>do</em> you drink a day? </td> </tr><tr> <th> sys3 </th>
+  <td> Do you drink some water every day? </td> </tr><tr> <th> sys4 </th>
+  <td> How many glasses <em>of</em> water <em>do</em> you drink a day? </td> </tr>
+</table>
+ <br/><button onclick="showhide('082_latex')">Show/Hide LaTeX</button> <br/><pre id="082_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & How many glasses \textlessem\textgreaterof\textless/em\textgreater water \textlessem\textgreaterdo\textless/em\textgreater you drink each day? \\
+sys1 & How many cups \textlessem\textgreaterof\textless/em\textgreater water \textlessem\textgreaterdo\textless/em\textgreater you drink every day? \\
+sys2 & How many glasses \textlessem\textgreaterof\textless/em\textgreater water \textlessem\textgreaterdo\textless/em\textgreater you drink a day? \\
+sys3 & Do you drink some water every day? \\
+sys4 & How many glasses \textlessem\textgreaterof\textless/em\textgreater water \textlessem\textgreaterdo\textless/em\textgreater you drink a day? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table082}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> type <em>of</em> heart conditions? </td> </tr><tr> <th> sys1 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> form <em>of</em> heart disease? </td> </tr><tr> <th> sys2 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> kind <em>of</em> heart disease? </td> </tr><tr> <th> sys3 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> form <em>of</em> heart disease? </td> </tr><tr> <th> sys4 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> form <em>of</em> heart disease? </td> </tr>
+</table>
+ <br/><button onclick="showhide('083_latex')">Show/Hide LaTeX</button> <br/><pre id="083_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater type \textlessem\textgreaterof\textless/em\textgreater heart conditions? \\
+sys1 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater form \textlessem\textgreaterof\textless/em\textgreater heart disease? \\
+sys2 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater kind \textlessem\textgreaterof\textless/em\textgreater heart disease? \\
+sys3 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater form \textlessem\textgreaterof\textless/em\textgreater heart disease? \\
+sys4 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater form \textlessem\textgreaterof\textless/em\textgreater heart disease? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table083}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>I</em> would like to get <em>a</em> fluorescein angiogram which allows me to assess the <em>blood</em> flow to the back <em>of</em> the eye. </td> </tr><tr> <th> sys1 </th>
+  <td> I'd like to do <em>a</em> fluorine angiogram so that <em>I</em> can assess whether <em>blood</em> can flow to the back <em>of</em> my eyes. </td> </tr><tr> <th> sys2 </th>
+  <td> <em>I</em> wanted to do <em>a</em> fluorescence vascular imaging so I could evaluate whether <em>blood</em> can flow to the back <em>of</em> the eye. </td> </tr><tr> <th> sys3 </th>
+  <td> <em>I</em> would like to make <em>a</em> picture <em>of</em> a <em>blood</em> clot so that I can assess whether blood can flow to the back of my eyes. </td> </tr><tr> <th> sys4 </th>
+  <td> <em>I</em> want to make <em>a</em> fluoride <em>blood</em> vessel imaging so that I can evaluate whether blood can flow to the back <em>of</em> the eyes. </td> </tr>
+</table>
+ <br/><button onclick="showhide('084_latex')">Show/Hide LaTeX</button> <br/><pre id="084_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterI\textless/em\textgreater would like to get \textlessem\textgreatera\textless/em\textgreater fluorescein angiogram which allows me to assess the \textlessem\textgreaterblood\textless/em\textgreater flow to the back \textlessem\textgreaterof\textless/em\textgreater the eye. \\
+sys1 & I'd like to do \textlessem\textgreatera\textless/em\textgreater fluorine angiogram so that \textlessem\textgreaterI\textless/em\textgreater can assess whether \textlessem\textgreaterblood\textless/em\textgreater can flow to the back \textlessem\textgreaterof\textless/em\textgreater my eyes. \\
+sys2 & \textlessem\textgreaterI\textless/em\textgreater wanted to do \textlessem\textgreatera\textless/em\textgreater fluorescence vascular imaging so I could evaluate whether \textlessem\textgreaterblood\textless/em\textgreater can flow to the back \textlessem\textgreaterof\textless/em\textgreater the eye. \\
+sys3 & \textlessem\textgreaterI\textless/em\textgreater would like to make \textlessem\textgreatera\textless/em\textgreater picture \textlessem\textgreaterof\textless/em\textgreater a \textlessem\textgreaterblood\textless/em\textgreater clot so that I can assess whether blood can flow to the back of my eyes. \\
+sys4 & \textlessem\textgreaterI\textless/em\textgreater want to make \textlessem\textgreatera\textless/em\textgreater fluoride \textlessem\textgreaterblood\textless/em\textgreater vessel imaging so that I can evaluate whether blood can flow to the back \textlessem\textgreaterof\textless/em\textgreater the eyes. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table084}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> bleeding disorders? </td> </tr><tr> <th> sys1 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> symptoms of haemorrhage? </td> </tr><tr> <th> sys2 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> symptoms of hemorrhagic disorder? </td> </tr><tr> <th> sys3 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> bleeding symptoms? </td> </tr><tr> <th> sys4 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> symptoms of bleeding disorder? </td> </tr>
+</table>
+ <br/><button onclick="showhide('085_latex')">Show/Hide LaTeX</button> <br/><pre id="085_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater bleeding disorders? \\
+sys1 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater symptoms of haemorrhage? \\
+sys2 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater symptoms of hemorrhagic disorder? \\
+sys3 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater bleeding symptoms? \\
+sys4 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater symptoms of bleeding disorder? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table085}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> allergies to medications? </td> </tr><tr> <th> sys1 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> drug sensitivity? </td> </tr><tr> <th> sys2 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> drug sensitivities? </td> </tr><tr> <th> sys3 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> drugs? </td> </tr><tr> <th> sys4 </th>
+  <td> <em>Do</em> you <em>have</em> <em>any</em> drug sensitivity? </td> </tr>
+</table>
+ <br/><button onclick="showhide('086_latex')">Show/Hide LaTeX</button> <br/><pre id="086_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater allergies to medications? \\
+sys1 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater drug sensitivity? \\
+sys2 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater drug sensitivities? \\
+sys3 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater drugs? \\
+sys4 & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater drug sensitivity? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table086}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Please</em> show me, tell me, <em>or</em> write down the name <em>of</em> the medications. </td> </tr><tr> <th> sys1 </th>
+  <td> <em>Please</em> tell me <em>or</em> write down the name <em>of</em> the drug. </td> </tr><tr> <th> sys2 </th>
+  <td> <em>Please</em> tell me <em>or</em> write down the name <em>of</em> the medicine. </td> </tr><tr> <th> sys3 </th>
+  <td> <em>Please</em> tell me, <em>or</em> write down the name <em>of</em> the drug. </td> </tr><tr> <th> sys4 </th>
+  <td> <em>Please</em> tell me, <em>or</em> write the name <em>of</em> the drug. </td> </tr>
+</table>
+ <br/><button onclick="showhide('087_latex')">Show/Hide LaTeX</button> <br/><pre id="087_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterPlease\textless/em\textgreater show me, tell me, \textlessem\textgreateror\textless/em\textgreater write down the name \textlessem\textgreaterof\textless/em\textgreater the medications. \\
+sys1 & \textlessem\textgreaterPlease\textless/em\textgreater tell me \textlessem\textgreateror\textless/em\textgreater write down the name \textlessem\textgreaterof\textless/em\textgreater the drug. \\
+sys2 & \textlessem\textgreaterPlease\textless/em\textgreater tell me \textlessem\textgreateror\textless/em\textgreater write down the name \textlessem\textgreaterof\textless/em\textgreater the medicine. \\
+sys3 & \textlessem\textgreaterPlease\textless/em\textgreater tell me, \textlessem\textgreateror\textless/em\textgreater write down the name \textlessem\textgreaterof\textless/em\textgreater the drug. \\
+sys4 & \textlessem\textgreaterPlease\textless/em\textgreater tell me, \textlessem\textgreateror\textless/em\textgreater write the name \textlessem\textgreaterof\textless/em\textgreater the drug. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table087}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Have</em> you <em>had</em> <em>any</em> bleeding <em>from</em> your gums? </td> </tr><tr> <th> sys1 </th>
+  <td> Did your gum bleed? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have bleeding teeth? </td> </tr><tr> <th> sys3 </th>
+  <td> Is your teeth bleeding? </td> </tr><tr> <th> sys4 </th>
+  <td> Do you have bloodshed on your teeth? </td> </tr>
+</table>
+ <br/><button onclick="showhide('088_latex')">Show/Hide LaTeX</button> <br/><pre id="088_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterHave\textless/em\textgreater you \textlessem\textgreaterhad\textless/em\textgreater \textlessem\textgreaterany\textless/em\textgreater bleeding \textlessem\textgreaterfrom\textless/em\textgreater your gums? \\
+sys1 & Did your gum bleed? \\
+sys2 & Do you have bleeding teeth? \\
+sys3 & Is your teeth bleeding? \\
+sys4 & Do you have bloodshed on your teeth? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table088}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Have</em> you noticed <em>any</em> abnormal discharge <em>from</em> the genital area? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your sexual organs have an abnormal fluid? </td> </tr><tr> <th> sys2 </th>
+  <td> Do your genitals excrete abnormal fluids? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your reproductive organs have unusual fluids? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your sex organs have an abnormal liquid emission? </td> </tr>
+</table>
+ <br/><button onclick="showhide('089_latex')">Show/Hide LaTeX</button> <br/><pre id="089_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterHave\textless/em\textgreater you noticed \textlessem\textgreaterany\textless/em\textgreater abnormal discharge \textlessem\textgreaterfrom\textless/em\textgreater the genital area? \\
+sys1 & Does your sexual organs have an abnormal fluid? \\
+sys2 & Do your genitals excrete abnormal fluids? \\
+sys3 & Does your reproductive organs have unusual fluids? \\
+sys4 & Does your sex organs have an abnormal liquid emission? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table089}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>The</em> antigens <em>in</em> your prostate <em>are</em> high. </td> </tr><tr> <th> sys1 </th>
+  <td> Your prostate antigen is high. </td> </tr><tr> <th> sys2 </th>
+  <td> Your prostate is high. </td> </tr><tr> <th> sys3 </th>
+  <td> Your previous line of resistance is high. </td> </tr><tr> <th> sys4 </th>
+  <td> Your prostate antigen is high. </td> </tr>
+</table>
+ <br/><button onclick="showhide('090_latex')">Show/Hide LaTeX</button> <br/><pre id="090_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterThe\textless/em\textgreater antigens \textlessem\textgreaterin\textless/em\textgreater your prostate \textlessem\textgreaterare\textless/em\textgreater high. \\
+sys1 & Your prostate antigen is high. \\
+sys2 & Your prostate is high. \\
+sys3 & Your previous line of resistance is high. \\
+sys4 & Your prostate antigen is high. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table090}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Has</em> there <em>been</em> discharge <em>from</em> your child's eyes? </td> </tr><tr> <th> sys1 </th>
+  <td> Do your kids have secretions in their eyes? </td> </tr><tr> <th> sys2 </th>
+  <td> Do your children have secretions in their eyes? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your child's eye have a tear? </td> </tr><tr> <th> sys4 </th>
+  <td> Do your child&#8217;s eyes have a secretion? </td> </tr>
+</table>
+ <br/><button onclick="showhide('091_latex')">Show/Hide LaTeX</button> <br/><pre id="091_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterHas\textless/em\textgreater there \textlessem\textgreaterbeen\textless/em\textgreater discharge \textlessem\textgreaterfrom\textless/em\textgreater your child's eyes? \\
+sys1 & Do your kids have secretions in their eyes? \\
+sys2 & Do your children have secretions in their eyes? \\
+sys3 & Does your child's eye have a tear? \\
+sys4 & Do your child&#8217;s eyes have a secretion? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table091}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>Do</em> you <em>have</em> loss <em>of</em> stool (incontinence)? </td> </tr><tr> <th> sys1 </th>
+  <td> Can't you control the shit? </td> </tr><tr> <th> sys2 </th>
+  <td> You can't control your dick? </td> </tr><tr> <th> sys3 </th>
+  <td> Can't you control the size? </td> </tr><tr> <th> sys4 </th>
+  <td> Are you unable to control the bulk? </td> </tr>
+</table>
+ <br/><button onclick="showhide('092_latex')">Show/Hide LaTeX</button> <br/><pre id="092_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterDo\textless/em\textgreater you \textlessem\textgreaterhave\textless/em\textgreater loss \textlessem\textgreaterof\textless/em\textgreater stool (incontinence)? \\
+sys1 & Can't you control the shit? \\
+sys2 & You can't control your dick? \\
+sys3 & Can't you control the size? \\
+sys4 & Are you unable to control the bulk? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table092}
+\end{table}</pre><a name="bucket7"/><h3> Examples for Bucket [100,1000) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan shows inflammation in <em>the</em> liver. </td> </tr><tr> <th> sys1 </th>
+  <td> The CT scan showed liver inflammation. </td> </tr><tr> <th> sys2 </th>
+  <td> CT scans show inflammation of <em>the</em> liver. </td> </tr><tr> <th> sys3 </th>
+  <td> CT scans show bone disease. </td> </tr><tr> <th> sys4 </th>
+  <td> CT scans show <em>the</em> liver has inflammation. </td> </tr>
+</table>
+ <br/><button onclick="showhide('093_latex')">Show/Hide LaTeX</button> <br/><pre id="093_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The CT scan shows inflammation in \textlessem\textgreaterthe\textless/em\textgreater liver. \\
+sys1 & The CT scan showed liver inflammation. \\
+sys2 & CT scans show inflammation of \textlessem\textgreaterthe\textless/em\textgreater liver. \\
+sys3 & CT scans show bone disease. \\
+sys4 & CT scans show \textlessem\textgreaterthe\textless/em\textgreater liver has inflammation. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table093}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan of <em>the</em> head shows a skull fracture. </td> </tr><tr> <th> sys1 </th>
+  <td> The head scan showed a fracture of <em>the</em> skull. </td> </tr><tr> <th> sys2 </th>
+  <td> The scans show a fractured skull. </td> </tr><tr> <th> sys3 </th>
+  <td> The head scan shows bone fractures. </td> </tr><tr> <th> sys4 </th>
+  <td> The scan of <em>the</em> head shows a broken neck. </td> </tr>
+</table>
+ <br/><button onclick="showhide('094_latex')">Show/Hide LaTeX</button> <br/><pre id="094_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & The CT scan of \textlessem\textgreaterthe\textless/em\textgreater head shows a skull fracture. \\
+sys1 & The head scan showed a fracture of \textlessem\textgreaterthe\textless/em\textgreater skull. \\
+sys2 & The scans show a fractured skull. \\
+sys3 & The head scan shows bone fractures. \\
+sys4 & The scan of \textlessem\textgreaterthe\textless/em\textgreater head shows a broken neck. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table094}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Does it happen when <em>you</em> cough? </td> </tr><tr> <th> sys1 </th>
+  <td> Does it happen when <em>you</em> cough? </td> </tr><tr> <th> sys2 </th>
+  <td> Does it happen when <em>you</em> cough? </td> </tr><tr> <th> sys3 </th>
+  <td> Is it gonna happen when you're hungry? </td> </tr><tr> <th> sys4 </th>
+  <td> Does it happen when coughing? </td> </tr>
+</table>
+ <br/><button onclick="showhide('095_latex')">Show/Hide LaTeX</button> <br/><pre id="095_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Does it happen when \textlessem\textgreateryou\textless/em\textgreater cough? \\
+sys1 & Does it happen when \textlessem\textgreateryou\textless/em\textgreater cough? \\
+sys2 & Does it happen when \textlessem\textgreateryou\textless/em\textgreater cough? \\
+sys3 & Is it gonna happen when you're hungry? \\
+sys4 & Does it happen when coughing? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table095}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Has <em>your</em> child had runny nose? </td> </tr><tr> <th> sys1 </th>
+  <td> Your kid's got a nose? </td> </tr><tr> <th> sys2 </th>
+  <td> Are you a kid with a nose? </td> </tr><tr> <th> sys3 </th>
+  <td> Did <em>your</em> kid have a nose? </td> </tr><tr> <th> sys4 </th>
+  <td> Is <em>your</em> child hiding? </td> </tr>
+</table>
+ <br/><button onclick="showhide('096_latex')">Show/Hide LaTeX</button> <br/><pre id="096_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Has \textlessem\textgreateryour\textless/em\textgreater child had runny nose? \\
+sys1 & Your kid's got a nose? \\
+sys2 & Are you a kid with a nose? \\
+sys3 & Did \textlessem\textgreateryour\textless/em\textgreater kid have a nose? \\
+sys4 & Is \textlessem\textgreateryour\textless/em\textgreater child hiding? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table096}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Bend forward at <em>the</em> waist while sitting up. </td> </tr><tr> <th> sys1 </th>
+  <td> Sit up and bend forward. </td> </tr><tr> <th> sys2 </th>
+  <td> I'm sitting in front of <em>the</em> house. </td> </tr><tr> <th> sys3 </th>
+  <td> When I get up, I'm going to <em>the</em> front door. </td> </tr><tr> <th> sys4 </th>
+  <td> When sitting, turning forward. </td> </tr>
+</table>
+ <br/><button onclick="showhide('097_latex')">Show/Hide LaTeX</button> <br/><pre id="097_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Bend forward at \textlessem\textgreaterthe\textless/em\textgreater waist while sitting up. \\
+sys1 & Sit up and bend forward. \\
+sys2 & I'm sitting in front of \textlessem\textgreaterthe\textless/em\textgreater house. \\
+sys3 & When I get up, I'm going to \textlessem\textgreaterthe\textless/em\textgreater front door. \\
+sys4 & When sitting, turning forward. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table097}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Can <em>you</em> bend <em>your</em> left knee up <em>to</em> <em>your</em> chest? </td> </tr><tr> <th> sys1 </th>
+  <td> Can <em>you</em> bend <em>your</em> left knee <em>to</em> the height of <em>your</em> chest? </td> </tr><tr> <th> sys2 </th>
+  <td> Can <em>you</em> raise <em>your</em> left knee <em>to</em> the height of <em>your</em> chest? </td> </tr><tr> <th> sys3 </th>
+  <td> Can <em>you</em> cover <em>your</em> left leg <em>to</em> the height of <em>your</em> chest? </td> </tr><tr> <th> sys4 </th>
+  <td> Can <em>you</em> turn <em>your</em> left knee <em>to</em> the height of <em>your</em> chest? </td> </tr>
+</table>
+ <br/><button onclick="showhide('098_latex')">Show/Hide LaTeX</button> <br/><pre id="098_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Can \textlessem\textgreateryou\textless/em\textgreater bend \textlessem\textgreateryour\textless/em\textgreater left knee up \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreateryour\textless/em\textgreater chest? \\
+sys1 & Can \textlessem\textgreateryou\textless/em\textgreater bend \textlessem\textgreateryour\textless/em\textgreater left knee \textlessem\textgreaterto\textless/em\textgreater the height of \textlessem\textgreateryour\textless/em\textgreater chest? \\
+sys2 & Can \textlessem\textgreateryou\textless/em\textgreater raise \textlessem\textgreateryour\textless/em\textgreater left knee \textlessem\textgreaterto\textless/em\textgreater the height of \textlessem\textgreateryour\textless/em\textgreater chest? \\
+sys3 & Can \textlessem\textgreateryou\textless/em\textgreater cover \textlessem\textgreateryour\textless/em\textgreater left leg \textlessem\textgreaterto\textless/em\textgreater the height of \textlessem\textgreateryour\textless/em\textgreater chest? \\
+sys4 & Can \textlessem\textgreateryou\textless/em\textgreater turn \textlessem\textgreateryour\textless/em\textgreater left knee \textlessem\textgreaterto\textless/em\textgreater the height of \textlessem\textgreateryour\textless/em\textgreater chest? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table098}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We need <em>to</em> place a tube in between <em>your</em> ribs and into <em>your</em> chest <em>to</em> help drain excess air or fluids. </td> </tr><tr> <th> sys1 </th>
+  <td> We need <em>to</em> insert a tube into the middle of <em>your</em> ribs and enter <em>your</em> chest <em>to</em> extract extra air or liquid. </td> </tr><tr> <th> sys2 </th>
+  <td> We need <em>to</em> insert a tube into the middle of <em>your</em> ribs and into <em>your</em> chest <em>to</em> extract excess air or fluid. </td> </tr><tr> <th> sys3 </th>
+  <td> We need <em>to</em> insert a rule into the middle of <em>your</em> bone, into <em>your</em> chest <em>to</em> extract excess air or fluid. </td> </tr><tr> <th> sys4 </th>
+  <td> We need <em>to</em> put a pipe in the middle of <em>your</em> ribs and into <em>your</em> chest <em>to</em> extract excess air or liquid. </td> </tr>
+</table>
+ <br/><button onclick="showhide('099_latex')">Show/Hide LaTeX</button> <br/><pre id="099_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We need \textlessem\textgreaterto\textless/em\textgreater place a tube in between \textlessem\textgreateryour\textless/em\textgreater ribs and into \textlessem\textgreateryour\textless/em\textgreater chest \textlessem\textgreaterto\textless/em\textgreater help drain excess air or fluids. \\
+sys1 & We need \textlessem\textgreaterto\textless/em\textgreater insert a tube into the middle of \textlessem\textgreateryour\textless/em\textgreater ribs and enter \textlessem\textgreateryour\textless/em\textgreater chest \textlessem\textgreaterto\textless/em\textgreater extract extra air or liquid. \\
+sys2 & We need \textlessem\textgreaterto\textless/em\textgreater insert a tube into the middle of \textlessem\textgreateryour\textless/em\textgreater ribs and into \textlessem\textgreateryour\textless/em\textgreater chest \textlessem\textgreaterto\textless/em\textgreater extract excess air or fluid. \\
+sys3 & We need \textlessem\textgreaterto\textless/em\textgreater insert a rule into the middle of \textlessem\textgreateryour\textless/em\textgreater bone, into \textlessem\textgreateryour\textless/em\textgreater chest \textlessem\textgreaterto\textless/em\textgreater extract excess air or fluid. \\
+sys4 & We need \textlessem\textgreaterto\textless/em\textgreater put a pipe in the middle of \textlessem\textgreateryour\textless/em\textgreater ribs and into \textlessem\textgreateryour\textless/em\textgreater chest \textlessem\textgreaterto\textless/em\textgreater extract excess air or liquid. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table099}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We must take <em>you</em> <em>to</em> <em>the</em> operating room <em>to</em> remove this portion of bowel. </td> </tr><tr> <th> sys1 </th>
+  <td> We must send <em>you</em> <em>to</em> <em>the</em> operating room <em>to</em> remove this part of the intestines. </td> </tr><tr> <th> sys2 </th>
+  <td> We need <em>to</em> get <em>you</em> <em>to</em> <em>the</em> operating room and remove this part of your intestine. </td> </tr><tr> <th> sys3 </th>
+  <td> We have <em>to</em> send <em>you</em> <em>to</em> <em>the</em> operating room to remove this part of the knife. </td> </tr><tr> <th> sys4 </th>
+  <td> We need <em>to</em> send <em>you</em> <em>to</em> <em>the</em> surgery room to remove this part of the intestine. </td> </tr>
+</table>
+ <br/><button onclick="showhide('100_latex')">Show/Hide LaTeX</button> <br/><pre id="100_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We must take \textlessem\textgreateryou\textless/em\textgreater \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater operating room \textlessem\textgreaterto\textless/em\textgreater remove this portion of bowel. \\
+sys1 & We must send \textlessem\textgreateryou\textless/em\textgreater \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater operating room \textlessem\textgreaterto\textless/em\textgreater remove this part of the intestines. \\
+sys2 & We need \textlessem\textgreaterto\textless/em\textgreater get \textlessem\textgreateryou\textless/em\textgreater \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater operating room and remove this part of your intestine. \\
+sys3 & We have \textlessem\textgreaterto\textless/em\textgreater send \textlessem\textgreateryou\textless/em\textgreater \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater operating room to remove this part of the knife. \\
+sys4 & We need \textlessem\textgreaterto\textless/em\textgreater send \textlessem\textgreateryou\textless/em\textgreater \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater surgery room to remove this part of the intestine. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table100}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We need <em>to</em> put a tube through <em>the</em> nose into <em>the</em> stomach. </td> </tr><tr> <th> sys1 </th>
+  <td> We need <em>to</em> get a tube from <em>the</em> nose to <em>the</em> stomach. </td> </tr><tr> <th> sys2 </th>
+  <td> We need <em>to</em> get <em>the</em> next tube from <em>the</em> nose to the stomach. </td> </tr><tr> <th> sys3 </th>
+  <td> We need <em>to</em> get <em>the</em> next one from <em>the</em> nose to the bone. </td> </tr><tr> <th> sys4 </th>
+  <td> We need a pipe from <em>the</em> nose <em>to</em> <em>the</em> stomach. </td> </tr>
+</table>
+ <br/><button onclick="showhide('101_latex')">Show/Hide LaTeX</button> <br/><pre id="101_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We need \textlessem\textgreaterto\textless/em\textgreater put a tube through \textlessem\textgreaterthe\textless/em\textgreater nose into \textlessem\textgreaterthe\textless/em\textgreater stomach. \\
+sys1 & We need \textlessem\textgreaterto\textless/em\textgreater get a tube from \textlessem\textgreaterthe\textless/em\textgreater nose to \textlessem\textgreaterthe\textless/em\textgreater stomach. \\
+sys2 & We need \textlessem\textgreaterto\textless/em\textgreater get \textlessem\textgreaterthe\textless/em\textgreater next tube from \textlessem\textgreaterthe\textless/em\textgreater nose to the stomach. \\
+sys3 & We need \textlessem\textgreaterto\textless/em\textgreater get \textlessem\textgreaterthe\textless/em\textgreater next one from \textlessem\textgreaterthe\textless/em\textgreater nose to the bone. \\
+sys4 & We need a pipe from \textlessem\textgreaterthe\textless/em\textgreater nose \textlessem\textgreaterto\textless/em\textgreater \textlessem\textgreaterthe\textless/em\textgreater stomach. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table101}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> I have <em>to</em> clean <em>your</em> urethra before I insert <em>the</em> tube. </td> </tr><tr> <th> sys1 </th>
+  <td> I need <em>to</em> clean <em>your</em> urinary before I insert <em>the</em> tube. </td> </tr><tr> <th> sys2 </th>
+  <td> I need <em>to</em> clean <em>your</em> urethra before I can insert <em>the</em> tube. </td> </tr><tr> <th> sys3 </th>
+  <td> Before inserting <em>the</em> rule, I need <em>to</em> clear <em>your</em> path. </td> </tr><tr> <th> sys4 </th>
+  <td> Before putting <em>the</em> tube in, I need <em>to</em> clean <em>your</em> urinary tract. </td> </tr>
+</table>
+ <br/><button onclick="showhide('102_latex')">Show/Hide LaTeX</button> <br/><pre id="102_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & I have \textlessem\textgreaterto\textless/em\textgreater clean \textlessem\textgreateryour\textless/em\textgreater urethra before I insert \textlessem\textgreaterthe\textless/em\textgreater tube. \\
+sys1 & I need \textlessem\textgreaterto\textless/em\textgreater clean \textlessem\textgreateryour\textless/em\textgreater urinary before I insert \textlessem\textgreaterthe\textless/em\textgreater tube. \\
+sys2 & I need \textlessem\textgreaterto\textless/em\textgreater clean \textlessem\textgreateryour\textless/em\textgreater urethra before I can insert \textlessem\textgreaterthe\textless/em\textgreater tube. \\
+sys3 & Before inserting \textlessem\textgreaterthe\textless/em\textgreater rule, I need \textlessem\textgreaterto\textless/em\textgreater clear \textlessem\textgreateryour\textless/em\textgreater path. \\
+sys4 & Before putting \textlessem\textgreaterthe\textless/em\textgreater tube in, I need \textlessem\textgreaterto\textless/em\textgreater clean \textlessem\textgreateryour\textless/em\textgreater urinary tract. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table102}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Risks of <em>the</em> procedure are uncommon but include <em>the</em> chance of bleeding or infection. </td> </tr><tr> <th> sys1 </th>
+  <td> The risk of treatment is not common, but there is a risk of bleeding or leaching. </td> </tr><tr> <th> sys2 </th>
+  <td> The risk of treatment is rare, but it can lead to bleeding or infection. </td> </tr><tr> <th> sys3 </th>
+  <td> The risk of treatment is uncommon, but there may be bleeding or infection. </td> </tr><tr> <th> sys4 </th>
+  <td> The risk of treatment is not common, but it is possible for bleeding or inflammation. </td> </tr>
+</table>
+ <br/><button onclick="showhide('103_latex')">Show/Hide LaTeX</button> <br/><pre id="103_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Risks of \textlessem\textgreaterthe\textless/em\textgreater procedure are uncommon but include \textlessem\textgreaterthe\textless/em\textgreater chance of bleeding or infection. \\
+sys1 & The risk of treatment is not common, but there is a risk of bleeding or leaching. \\
+sys2 & The risk of treatment is rare, but it can lead to bleeding or infection. \\
+sys3 & The risk of treatment is uncommon, but there may be bleeding or infection. \\
+sys4 & The risk of treatment is not common, but it is possible for bleeding or inflammation. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table103}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> We will perform a CT scan, a test <em>to</em> look at <em>the</em> area in more detail. </td> </tr><tr> <th> sys1 </th>
+  <td> We'll do a scan and take a closer look at this film. </td> </tr><tr> <th> sys2 </th>
+  <td> We'll do a scan and take a closer look at this video. </td> </tr><tr> <th> sys3 </th>
+  <td> We'll do a survey and look more closely at this. </td> </tr><tr> <th> sys4 </th>
+  <td> We will make a scan and look at this piece more carefully. </td> </tr>
+</table>
+ <br/><button onclick="showhide('104_latex')">Show/Hide LaTeX</button> <br/><pre id="104_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & We will perform a CT scan, a test \textlessem\textgreaterto\textless/em\textgreater look at \textlessem\textgreaterthe\textless/em\textgreater area in more detail. \\
+sys1 & We'll do a scan and take a closer look at this film. \\
+sys2 & We'll do a scan and take a closer look at this video. \\
+sys3 & We'll do a survey and look more closely at this. \\
+sys4 & We will make a scan and look at this piece more carefully. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table104}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Have <em>you</em> noticed any abnormal discharge from <em>the</em> genital area? </td> </tr><tr> <th> sys1 </th>
+  <td> Does your sexual organs have an abnormal fluid? </td> </tr><tr> <th> sys2 </th>
+  <td> Do your genitals excrete abnormal fluids? </td> </tr><tr> <th> sys3 </th>
+  <td> Does your reproductive organs have unusual fluids? </td> </tr><tr> <th> sys4 </th>
+  <td> Does your sex organs have an abnormal liquid emission? </td> </tr>
+</table>
+ <br/><button onclick="showhide('105_latex')">Show/Hide LaTeX</button> <br/><pre id="105_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Have \textlessem\textgreateryou\textless/em\textgreater noticed any abnormal discharge from \textlessem\textgreaterthe\textless/em\textgreater genital area? \\
+sys1 & Does your sexual organs have an abnormal fluid? \\
+sys2 & Do your genitals excrete abnormal fluids? \\
+sys3 & Does your reproductive organs have unusual fluids? \\
+sys4 & Does your sex organs have an abnormal liquid emission? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table105}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Were there any complications during <em>the</em> at <em>the</em> delivery? </td> </tr><tr> <th> sys1 </th>
+  <td> Were there any complications during childbirth? </td> </tr><tr> <th> sys2 </th>
+  <td> Did you have any complications during childbirth? </td> </tr><tr> <th> sys3 </th>
+  <td> Is there any disease during separation? </td> </tr><tr> <th> sys4 </th>
+  <td> Are there any complications during childbirth? </td> </tr>
+</table>
+ <br/><button onclick="showhide('106_latex')">Show/Hide LaTeX</button> <br/><pre id="106_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Were there any complications during \textlessem\textgreaterthe\textless/em\textgreater at \textlessem\textgreaterthe\textless/em\textgreater delivery? \\
+sys1 & Were there any complications during childbirth? \\
+sys2 & Did you have any complications during childbirth? \\
+sys3 & Is there any disease during separation? \\
+sys4 & Are there any complications during childbirth? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table106}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> Did <em>the</em> double vision gradually get worse over time? </td> </tr><tr> <th> sys1 </th>
+  <td> Has your repercussion ever gotten worse? </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have a serious vision? </td> </tr><tr> <th> sys3 </th>
+  <td> Has your review become more serious? </td> </tr><tr> <th> sys4 </th>
+  <td> Is your recurrence getting more serious? </td> </tr>
+</table>
+ <br/><button onclick="showhide('107_latex')">Show/Hide LaTeX</button> <br/><pre id="107_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & Did \textlessem\textgreaterthe\textless/em\textgreater double vision gradually get worse over time? \\
+sys1 & Has your repercussion ever gotten worse? \\
+sys2 & Do you have a serious vision? \\
+sys3 & Has your review become more serious? \\
+sys4 & Is your recurrence getting more serious? \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table107}
+\end{table}</pre><a name="bucket8"/><h3> Examples for Bucket >=1000 </h3> 
+</body>
+</html>

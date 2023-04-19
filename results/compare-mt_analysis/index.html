@@ -1,0 +1,1228 @@
+<html>
+<head>
+<link rel="stylesheet" href="compare_mt.css">
+</head>
+<script>
+
+function showhide(elem) {
+  var x = document.getElementById(elem);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+<body>
+<h1>compare-mt Analysis Report</h1>
+ <h2>Aggregate Scores</h2>
+<table border="1">
+<caption> BLEU </caption><tr> <th>  </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th> </tr><tr> <th> BLEU </th>
+  <td> 19.3778 </td>
+  <td> 22.0004 </td>
+  <td> 12.8324 </td>
+  <td> 17.5621 </td> </tr>
+</table>
+ <br/><button onclick="showhide('001_latex')">Show/Hide LaTeX</button> <br/><pre id="001_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cccc}
+ & sys1 & sys2 & sys3 & sys4 \\ \hline \hline
+BLEU & 19.3778 & 22.0004 & 12.8324 & 17.5621 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table001}
+\end{table}</pre><img src="001-score-bleu.png" alt="Score Comparison"> <br/><button onclick="showhide('001-score-bleu_latex')">Show/Hide LaTeX</button> <br/><pre id="001-score-bleu_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{001-score-bleu.pdf}
+  \caption{Score Comparison}
+  \label{fig:001-score-bleu}
+\end{figure}</pre>
+<table border="1">
+<caption> length ratio </caption><tr> <th>  </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th> </tr><tr> <th> length ratio </th>
+  <td> 0.9315 (ref=3122, out=2908) </td>
+  <td> 0.9449 (ref=3122, out=2950) </td>
+  <td> 0.9513 (ref=3122, out=2970) </td>
+  <td> 0.9500 (ref=3122, out=2966) </td> </tr>
+</table>
+ <br/><button onclick="showhide('002_latex')">Show/Hide LaTeX</button> <br/><pre id="002_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cccc}
+ & sys1 & sys2 & sys3 & sys4 \\ \hline \hline
+length ratio & 0.9315 (ref=3122, out=2908) & 0.9449 (ref=3122, out=2950) & 0.9513 (ref=3122, out=2970) & 0.9500 (ref=3122, out=2966) \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table002}
+\end{table}</pre><img src="002-score-lengthrat.png" alt="Score Comparison"> <br/><button onclick="showhide('002-score-lengthrat_latex')">Show/Hide LaTeX</button> <br/><pre id="002-score-lengthrat_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{002-score-lengthrat.pdf}
+  \caption{Score Comparison}
+  \label{fig:002-score-lengthrat}
+\end{figure}</pre>
+<h2>Word Accuracies</h2>
+<table border="1">
+<caption> word fmeas by frequency bucket </caption><tr> <th> frequency </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th>
+  <th> Examples </th> </tr><tr> <th> <1 </th>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket0">Examples</a> </td> </tr><tr> <th> 1 </th>
+  <td> 0.4601 </td>
+  <td> 0.4472 </td>
+  <td> 0.3008 </td>
+  <td> 0.4009 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket1">Examples</a> </td> </tr><tr> <th> 2 </th>
+  <td> 0.4663 </td>
+  <td> 0.4727 </td>
+  <td> 0.3341 </td>
+  <td> 0.4310 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket2">Examples</a> </td> </tr><tr> <th> 3 </th>
+  <td> 0.5833 </td>
+  <td> 0.5759 </td>
+  <td> 0.4198 </td>
+  <td> 0.5507 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket3">Examples</a> </td> </tr><tr> <th> 4 </th>
+  <td> 0.5487 </td>
+  <td> 0.5424 </td>
+  <td> 0.3445 </td>
+  <td> 0.4741 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket4">Examples</a> </td> </tr><tr> <th> [5,10) </th>
+  <td> 0.4899 </td>
+  <td> 0.5100 </td>
+  <td> 0.4131 </td>
+  <td> 0.4967 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket5">Examples</a> </td> </tr><tr> <th> [10,100) </th>
+  <td> 0.5119 </td>
+  <td> 0.5370 </td>
+  <td> 0.4890 </td>
+  <td> 0.5358 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket6">Examples</a> </td> </tr><tr> <th> [100,1000) </th>
+  <td> 0.7164 </td>
+  <td> 0.7107 </td>
+  <td> 0.6913 </td>
+  <td> 0.7278 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket7">Examples</a> </td> </tr><tr> <th> >=1000 </th>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> <a href="003-wordacc-frequency.html#bucket8">Examples</a> </td> </tr>
+</table>
+ <br/><button onclick="showhide('108_latex')">Show/Hide LaTeX</button> <br/><pre id="108_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||ccccc}
+frequency & sys1 & sys2 & sys4 & Examples \\ \hline \hline
+\textless1 & 0.0000 & 0.0000 & 0.0000 & \textlessa href="003-wordacc-frequency.html#bucket0"\textgreaterExamples\textless/a\textgreater \\
+1 & 0.4601 & 0.4472 & 0.4009 & \textlessa href="003-wordacc-frequency.html#bucket1"\textgreaterExamples\textless/a\textgreater \\
+2 & 0.4663 & 0.4727 & 0.4310 & \textlessa href="003-wordacc-frequency.html#bucket2"\textgreaterExamples\textless/a\textgreater \\
+3 & 0.5833 & 0.5759 & 0.5507 & \textlessa href="003-wordacc-frequency.html#bucket3"\textgreaterExamples\textless/a\textgreater \\
+4 & 0.5487 & 0.5424 & 0.4741 & \textlessa href="003-wordacc-frequency.html#bucket4"\textgreaterExamples\textless/a\textgreater \\
+{[}5,10) & 0.4899 & 0.5100 & 0.4967 & \textlessa href="003-wordacc-frequency.html#bucket5"\textgreaterExamples\textless/a\textgreater \\
+{[}10,100) & 0.5119 & 0.5370 & 0.5358 & \textlessa href="003-wordacc-frequency.html#bucket6"\textgreaterExamples\textless/a\textgreater \\
+{[}100,1000) & 0.7164 & 0.7107 & 0.7278 & \textlessa href="003-wordacc-frequency.html#bucket7"\textgreaterExamples\textless/a\textgreater \\
+\textgreater=1000 & 0.0000 & 0.0000 & 0.0000 & \textlessa href="003-wordacc-frequency.html#bucket8"\textgreaterExamples\textless/a\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table108}
+\end{table}</pre><img src="003-wordacc-frequency-fmeas.png" alt="Word Accuracy Analysis"> <br/><button onclick="showhide('003-wordacc-frequency-fmeas_latex')">Show/Hide LaTeX</button> <br/><pre id="003-wordacc-frequency-fmeas_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{003-wordacc-frequency-fmeas.pdf}
+  \caption{Word Accuracy Analysis}
+  \label{fig:003-wordacc-frequency-fmeas}
+\end{figure}</pre>
+<h2>Sentence Buckets</h2>
+<table border="1">
+<caption> bucket type: length, statistic type: BLEU </caption><tr> <th> length </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th> </tr><tr> <th> <10 </th>
+  <td> 19.6243 </td>
+  <td> 22.3084 </td>
+  <td> 13.0731 </td>
+  <td> 17.2064 </td> </tr><tr> <th> [10,20) </th>
+  <td> 19.7596 </td>
+  <td> 22.3415 </td>
+  <td> 12.4665 </td>
+  <td> 18.1977 </td> </tr><tr> <th> [20,30) </th>
+  <td> 18.6026 </td>
+  <td> 21.2051 </td>
+  <td> 13.6243 </td>
+  <td> 16.9144 </td> </tr><tr> <th> [30,40) </th>
+  <td> 18.7886 </td>
+  <td> 20.7958 </td>
+  <td> 44.3563 </td>
+  <td> 16.1916 </td> </tr><tr> <th> [40,50) </th>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td> </tr><tr> <th> [50,60) </th>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td> </tr><tr> <th> >=60 </th>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td>
+  <td> 0.0000 </td> </tr>
+</table>
+ <br/><button onclick="showhide('109_latex')">Show/Hide LaTeX</button> <br/><pre id="109_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cccc}
+length & sys1 & sys2 & sys3 & sys4 \\ \hline \hline
+\textless10 & 19.6243 & 22.3084 & 13.0731 & 17.2064 \\
+{[}10,20) & 19.7596 & 22.3415 & 12.4665 & 18.1977 \\
+{[}20,30) & 18.6026 & 21.2051 & 13.6243 & 16.9144 \\
+{[}30,40) & 18.7886 & 20.7958 & 44.3563 & 16.1916 \\
+{[}40,50) & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+{[}50,60) & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+\textgreater=60 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table109}
+\end{table}</pre><img src="004-sent-length-bleu.png" alt="Sentence Bucket Analysis"> <br/><button onclick="showhide('004-sent-length-bleu_latex')">Show/Hide LaTeX</button> <br/><pre id="004-sent-length-bleu_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{004-sent-length-bleu.pdf}
+  \caption{Sentence Bucket Analysis}
+  \label{fig:004-sent-length-bleu}
+\end{figure}</pre>
+<table border="1">
+<caption> bucket type: len(output)-len(reference), statistic type: count </caption><tr> <th> lengthdiff </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th> </tr><tr> <th> <-20 </th>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td> </tr><tr> <th> [-20,-10) </th>
+  <td> 1 </td>
+  <td> 1 </td>
+  <td> 0 </td>
+  <td> 0 </td> </tr><tr> <th> [-10,-5) </th>
+  <td> 3 </td>
+  <td> 6 </td>
+  <td> 7 </td>
+  <td> 3 </td> </tr><tr> <th> -5 </th>
+  <td> 6 </td>
+  <td> 6 </td>
+  <td> 5 </td>
+  <td> 0 </td> </tr><tr> <th> -4 </th>
+  <td> 17 </td>
+  <td> 14 </td>
+  <td> 12 </td>
+  <td> 14 </td> </tr><tr> <th> -3 </th>
+  <td> 24 </td>
+  <td> 20 </td>
+  <td> 25 </td>
+  <td> 27 </td> </tr><tr> <th> -2 </th>
+  <td> 52 </td>
+  <td> 41 </td>
+  <td> 47 </td>
+  <td> 43 </td> </tr><tr> <th> -1 </th>
+  <td> 63 </td>
+  <td> 66 </td>
+  <td> 63 </td>
+  <td> 72 </td> </tr><tr> <th> 0 </th>
+  <td> 75 </td>
+  <td> 76 </td>
+  <td> 68 </td>
+  <td> 81 </td> </tr><tr> <th> 1 </th>
+  <td> 44 </td>
+  <td> 46 </td>
+  <td> 42 </td>
+  <td> 37 </td> </tr><tr> <th> 2 </th>
+  <td> 15 </td>
+  <td> 29 </td>
+  <td> 33 </td>
+  <td> 28 </td> </tr><tr> <th> 3 </th>
+  <td> 18 </td>
+  <td> 9 </td>
+  <td> 8 </td>
+  <td> 11 </td> </tr><tr> <th> 4 </th>
+  <td> 4 </td>
+  <td> 5 </td>
+  <td> 8 </td>
+  <td> 4 </td> </tr><tr> <th> 5 </th>
+  <td> 0 </td>
+  <td> 4 </td>
+  <td> 1 </td>
+  <td> 4 </td> </tr><tr> <th> [6,11) </th>
+  <td> 2 </td>
+  <td> 1 </td>
+  <td> 5 </td>
+  <td> 0 </td> </tr><tr> <th> [11,21) </th>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td> </tr><tr> <th> >=21 </th>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('110_latex')">Show/Hide LaTeX</button> <br/><pre id="110_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cccc}
+lengthdiff & sys1 & sys2 & sys3 & sys4 \\ \hline \hline
+\textless-20 & 0 & 0 & 0 & 0 \\
+{[}-20,-10) & 1 & 1 & 0 & 0 \\
+{[}-10,-5) & 3 & 6 & 7 & 3 \\
+-5 & 6 & 6 & 5 & 0 \\
+-4 & 17 & 14 & 12 & 14 \\
+-3 & 24 & 20 & 25 & 27 \\
+-2 & 52 & 41 & 47 & 43 \\
+-1 & 63 & 66 & 63 & 72 \\
+0 & 75 & 76 & 68 & 81 \\
+1 & 44 & 46 & 42 & 37 \\
+2 & 15 & 29 & 33 & 28 \\
+3 & 18 & 9 & 8 & 11 \\
+4 & 4 & 5 & 8 & 4 \\
+5 & 0 & 4 & 1 & 4 \\
+{[}6,11) & 2 & 1 & 5 & 0 \\
+{[}11,21) & 0 & 0 & 0 & 0 \\
+\textgreater=21 & 0 & 0 & 0 & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table110}
+\end{table}</pre><img src="005-sent-lengthdiff-count.png" alt="Sentence Bucket Analysis"> <br/><button onclick="showhide('005-sent-lengthdiff-count_latex')">Show/Hide LaTeX</button> <br/><pre id="005-sent-lengthdiff-count_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{005-sent-lengthdiff-count.pdf}
+  \caption{Sentence Bucket Analysis}
+  \label{fig:005-sent-lengthdiff-count}
+\end{figure}</pre>
+<table border="1">
+<caption> bucket type: sentence-level BLEU, statistic type: count </caption><tr> <th> sentbleu </th>
+  <th> sys1 </th>
+  <th> sys2 </th>
+  <th> sys3 </th>
+  <th> sys4 </th> </tr><tr> <th> <10.0 </th>
+  <td> 23 </td>
+  <td> 30 </td>
+  <td> 32 </td>
+  <td> 18 </td> </tr><tr> <th> [10.0,20.0) </th>
+  <td> 105 </td>
+  <td> 103 </td>
+  <td> 140 </td>
+  <td> 111 </td> </tr><tr> <th> [20.0,30.0) </th>
+  <td> 67 </td>
+  <td> 66 </td>
+  <td> 80 </td>
+  <td> 84 </td> </tr><tr> <th> [30.0,40.0) </th>
+  <td> 55 </td>
+  <td> 40 </td>
+  <td> 32 </td>
+  <td> 46 </td> </tr><tr> <th> [40.0,50.0) </th>
+  <td> 24 </td>
+  <td> 23 </td>
+  <td> 18 </td>
+  <td> 29 </td> </tr><tr> <th> [50.0,60.0) </th>
+  <td> 32 </td>
+  <td> 31 </td>
+  <td> 11 </td>
+  <td> 18 </td> </tr><tr> <th> [60.0,70.0) </th>
+  <td> 8 </td>
+  <td> 16 </td>
+  <td> 4 </td>
+  <td> 7 </td> </tr><tr> <th> [70.0,80.0) </th>
+  <td> 3 </td>
+  <td> 4 </td>
+  <td> 2 </td>
+  <td> 4 </td> </tr><tr> <th> [80.0,90.0) </th>
+  <td> 1 </td>
+  <td> 4 </td>
+  <td> 3 </td>
+  <td> 2 </td> </tr><tr> <th> >=90.0 </th>
+  <td> 6 </td>
+  <td> 7 </td>
+  <td> 2 </td>
+  <td> 5 </td> </tr>
+</table>
+ <br/><button onclick="showhide('111_latex')">Show/Hide LaTeX</button> <br/><pre id="111_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cccc}
+sentbleu & sys1 & sys2 & sys3 & sys4 \\ \hline \hline
+\textless10.0 & 23 & 30 & 32 & 18 \\
+{[}10.0,20.0) & 105 & 103 & 140 & 111 \\
+{[}20.0,30.0) & 67 & 66 & 80 & 84 \\
+{[}30.0,40.0) & 55 & 40 & 32 & 46 \\
+{[}40.0,50.0) & 24 & 23 & 18 & 29 \\
+{[}50.0,60.0) & 32 & 31 & 11 & 18 \\
+{[}60.0,70.0) & 8 & 16 & 4 & 7 \\
+{[}70.0,80.0) & 3 & 4 & 2 & 4 \\
+{[}80.0,90.0) & 1 & 4 & 3 & 2 \\
+\textgreater=90.0 & 6 & 7 & 2 & 5 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table111}
+\end{table}</pre><img src="006-sent-sentbleu-count.png" alt="Sentence Bucket Analysis"> <br/><button onclick="showhide('006-sent-sentbleu-count_latex')">Show/Hide LaTeX</button> <br/><pre id="006-sent-sentbleu-count_latex" style="display:none">\begin{figure}[h]
+  \centering
+  \includegraphics{006-sent-sentbleu-count.pdf}
+  \caption{Sentence Bucket Analysis}
+  \label{fig:006-sent-sentbleu-count}
+\end{figure}</pre>
+<h2>Characteristic N-grams</h2>
+<p> min_ngram_length=1, max_ngram_length=4 </p><p> report_length=50, alpha=1.0, compare_type=match </p><table border="1">
+<caption> 50 n-grams where sys1>sys2 in match </caption><tr> <th> n-gram </th>
+  <th> match </th>
+  <th> sys1 </th>
+  <th> sys2 </th> </tr><tr> <th> CT scan </th>
+  <td> 0.8889 </td>
+  <td> 7 </td>
+  <td> 0 </td> </tr><tr> <th> The CT </th>
+  <td> 0.8889 </td>
+  <td> 7 </td>
+  <td> 0 </td> </tr><tr> <th> The CT scan </th>
+  <td> 0.8889 </td>
+  <td> 7 </td>
+  <td> 0 </td> </tr><tr> <th> scan </th>
+  <td> 0.8462 </td>
+  <td> 10 </td>
+  <td> 1 </td> </tr><tr> <th> CT scan shows </th>
+  <td> 0.8333 </td>
+  <td> 4 </td>
+  <td> 0 </td> </tr><tr> <th> scan shows </th>
+  <td> 0.8333 </td>
+  <td> 4 </td>
+  <td> 0 </td> </tr><tr> <th> The CT scan shows </th>
+  <td> 0.8333 </td>
+  <td> 4 </td>
+  <td> 0 </td> </tr><tr> <th> Has the </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> or inflammation. </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> itchy? </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> Any </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> appendix </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> emphysema, a </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> MRI shows </th>
+  <td> 0.7500 </td>
+  <td> 5 </td>
+  <td> 1 </td> </tr><tr> <th> emphysema, </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> kidney </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> infection or </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> The MRI shows </th>
+  <td> 0.7500 </td>
+  <td> 5 </td>
+  <td> 1 </td> </tr><tr> <th> affecting </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> affecting your </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> infection or inflammation. </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> dentures? </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> emphysema, a lung </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> emphysema, a lung disease. </th>
+  <td> 0.7500 </td>
+  <td> 2 </td>
+  <td> 0 </td> </tr><tr> <th> Has </th>
+  <td> 0.7143 </td>
+  <td> 4 </td>
+  <td> 1 </td> </tr><tr> <th> Does your </th>
+  <td> 0.7000 </td>
+  <td> 6 </td>
+  <td> 2 </td> </tr><tr> <th> MRI </th>
+  <td> 0.6923 </td>
+  <td> 8 </td>
+  <td> 3 </td> </tr><tr> <th> The MRI </th>
+  <td> 0.6923 </td>
+  <td> 8 </td>
+  <td> 3 </td> </tr><tr> <th> a build-up of </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> had an appendix </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> of bleeding or </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> up like </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> trauma to </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> of urine </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> you snore at </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> STI </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> sugar, or </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> show </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> steroids to prevent vision </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> flu vaccine </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> blood sugar </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> ovaries </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> eat a </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> the swelling </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> problem with </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> for your </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> up </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> the head and </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> Do you snore </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr><tr> <th> lot of green </th>
+  <td> 0.6667 </td>
+  <td> 1 </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('112_latex')">Show/Hide LaTeX</button> <br/><pre id="112_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||ccc}
+n-gram & match & sys1 & sys2 \\ \hline \hline
+CT scan & 0.8889 & 7 & 0 \\
+The CT & 0.8889 & 7 & 0 \\
+The CT scan & 0.8889 & 7 & 0 \\
+scan & 0.8462 & 10 & 1 \\
+CT scan shows & 0.8333 & 4 & 0 \\
+scan shows & 0.8333 & 4 & 0 \\
+The CT scan shows & 0.8333 & 4 & 0 \\
+Has the & 0.7500 & 2 & 0 \\
+or inflammation. & 0.7500 & 2 & 0 \\
+itchy? & 0.7500 & 2 & 0 \\
+Any & 0.7500 & 2 & 0 \\
+appendix & 0.7500 & 2 & 0 \\
+emphysema, a & 0.7500 & 2 & 0 \\
+MRI shows & 0.7500 & 5 & 1 \\
+emphysema, & 0.7500 & 2 & 0 \\
+kidney & 0.7500 & 2 & 0 \\
+infection or & 0.7500 & 2 & 0 \\
+The MRI shows & 0.7500 & 5 & 1 \\
+affecting & 0.7500 & 2 & 0 \\
+affecting your & 0.7500 & 2 & 0 \\
+infection or inflammation. & 0.7500 & 2 & 0 \\
+dentures? & 0.7500 & 2 & 0 \\
+emphysema, a lung & 0.7500 & 2 & 0 \\
+emphysema, a lung disease. & 0.7500 & 2 & 0 \\
+Has & 0.7143 & 4 & 1 \\
+Does your & 0.7000 & 6 & 2 \\
+MRI & 0.6923 & 8 & 3 \\
+The MRI & 0.6923 & 8 & 3 \\
+a build-up of & 0.6667 & 1 & 0 \\
+had an appendix & 0.6667 & 1 & 0 \\
+of bleeding or & 0.6667 & 1 & 0 \\
+up like & 0.6667 & 1 & 0 \\
+trauma to & 0.6667 & 1 & 0 \\
+of urine & 0.6667 & 1 & 0 \\
+you snore at & 0.6667 & 1 & 0 \\
+STI & 0.6667 & 1 & 0 \\
+sugar, or & 0.6667 & 1 & 0 \\
+show & 0.6667 & 1 & 0 \\
+steroids to prevent vision & 0.6667 & 1 & 0 \\
+flu vaccine & 0.6667 & 1 & 0 \\
+blood sugar & 0.6667 & 1 & 0 \\
+ovaries & 0.6667 & 1 & 0 \\
+eat a & 0.6667 & 1 & 0 \\
+the swelling & 0.6667 & 1 & 0 \\
+problem with & 0.6667 & 1 & 0 \\
+for your & 0.6667 & 1 & 0 \\
+up & 0.6667 & 1 & 0 \\
+the head and & 0.6667 & 1 & 0 \\
+Do you snore & 0.6667 & 1 & 0 \\
+lot of green & 0.6667 & 1 & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table112}
+\end{table}</pre><table border="1">
+<caption> 50 n-grams where sys2>sys1 in match </caption><tr> <th> n-gram </th>
+  <th> match </th>
+  <th> sys1 </th>
+  <th> sys2 </th> </tr><tr> <th> you been diagnosed with </th>
+  <td> 0.1429 </td>
+  <td> 0 </td>
+  <td> 5 </td> </tr><tr> <th> been diagnosed with </th>
+  <td> 0.1429 </td>
+  <td> 0 </td>
+  <td> 5 </td> </tr><tr> <th> will </th>
+  <td> 0.2000 </td>
+  <td> 1 </td>
+  <td> 7 </td> </tr><tr> <th> you been diagnosed </th>
+  <td> 0.2500 </td>
+  <td> 1 </td>
+  <td> 5 </td> </tr><tr> <th> Have you been diagnosed </th>
+  <td> 0.2500 </td>
+  <td> 1 </td>
+  <td> 5 </td> </tr><tr> <th> pelvic </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> new medicines? </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> tissue </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> we will </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> told you </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> to give </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> feet? </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> is too </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> you need </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> pain in </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> It </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> your vision. </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> medications </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> pain in your </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> been diagnosed </th>
+  <td> 0.2500 </td>
+  <td> 1 </td>
+  <td> 5 </td> </tr><tr> <th> vision. </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> medicines? </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> It is </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> your feet? </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> The blood </th>
+  <td> 0.2500 </td>
+  <td> 0 </td>
+  <td> 2 </td> </tr><tr> <th> the last 6 </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> feel like your </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> Did the mother </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> healthy tissue </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> think you </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> the sound </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> your child wave goodbye? </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> into your chest to </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> a time </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> glasses of water do </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> things. Please </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> supply to </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> before the infection gets </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> Can your </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> any side </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> test results. </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> that your child </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> child wave goodbye? </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> into my </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> out your </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> green vegetables to build </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> Does sound make your </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> am your child's physical </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> minutes. </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr><tr> <th> abnormal heart </th>
+  <td> 0.3333 </td>
+  <td> 0 </td>
+  <td> 1 </td> </tr>
+</table>
+ <br/><button onclick="showhide('113_latex')">Show/Hide LaTeX</button> <br/><pre id="113_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||ccc}
+n-gram & match & sys1 & sys2 \\ \hline \hline
+you been diagnosed with & 0.1429 & 0 & 5 \\
+been diagnosed with & 0.1429 & 0 & 5 \\
+will & 0.2000 & 1 & 7 \\
+you been diagnosed & 0.2500 & 1 & 5 \\
+Have you been diagnosed & 0.2500 & 1 & 5 \\
+pelvic & 0.2500 & 0 & 2 \\
+new medicines? & 0.2500 & 0 & 2 \\
+tissue & 0.2500 & 0 & 2 \\
+we will & 0.2500 & 0 & 2 \\
+told you & 0.2500 & 0 & 2 \\
+to give & 0.2500 & 0 & 2 \\
+feet? & 0.2500 & 0 & 2 \\
+is too & 0.2500 & 0 & 2 \\
+you need & 0.2500 & 0 & 2 \\
+pain in & 0.2500 & 0 & 2 \\
+It & 0.2500 & 0 & 2 \\
+your vision. & 0.2500 & 0 & 2 \\
+medications & 0.2500 & 0 & 2 \\
+pain in your & 0.2500 & 0 & 2 \\
+been diagnosed & 0.2500 & 1 & 5 \\
+vision. & 0.2500 & 0 & 2 \\
+medicines? & 0.2500 & 0 & 2 \\
+It is & 0.2500 & 0 & 2 \\
+your feet? & 0.2500 & 0 & 2 \\
+The blood & 0.2500 & 0 & 2 \\
+the last 6 & 0.3333 & 0 & 1 \\
+feel like your & 0.3333 & 0 & 1 \\
+Did the mother & 0.3333 & 0 & 1 \\
+healthy tissue & 0.3333 & 0 & 1 \\
+think you & 0.3333 & 0 & 1 \\
+the sound & 0.3333 & 0 & 1 \\
+your child wave goodbye? & 0.3333 & 0 & 1 \\
+into your chest to & 0.3333 & 0 & 1 \\
+a time & 0.3333 & 0 & 1 \\
+glasses of water do & 0.3333 & 0 & 1 \\
+things. Please & 0.3333 & 0 & 1 \\
+supply to & 0.3333 & 0 & 1 \\
+before the infection gets & 0.3333 & 0 & 1 \\
+Can your & 0.3333 & 0 & 1 \\
+any side & 0.3333 & 0 & 1 \\
+test results. & 0.3333 & 0 & 1 \\
+that your child & 0.3333 & 0 & 1 \\
+child wave goodbye? & 0.3333 & 0 & 1 \\
+into my & 0.3333 & 0 & 1 \\
+out your & 0.3333 & 0 & 1 \\
+green vegetables to build & 0.3333 & 0 & 1 \\
+Does sound make your & 0.3333 & 0 & 1 \\
+am your child's physical & 0.3333 & 0 & 1 \\
+minutes. & 0.3333 & 0 & 1 \\
+abnormal heart & 0.3333 & 0 & 1 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table113}
+\end{table}</pre>
+<h2>Sentence Examples</h2>
+<h4> 10 sentences where sys1>sys2 at sentence-level BLEU </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> The MRI shows cirrhosis of the liver. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> The MRI shows cirrhosis of the liver. </td>
+  <td> 100.0000 </td> </tr><tr> <th> sys2 </th>
+  <td> Nuclear magnetic resonance imaging showed hepatic cirrhosis. </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('114_latex')">Show/Hide LaTeX</button> <br/><pre id="114_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & The MRI shows cirrhosis of the liver. &  \\
+sys1 & The MRI shows cirrhosis of the liver. & 100.0000 \\
+sys2 & Nuclear magnetic resonance imaging showed hepatic cirrhosis. & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table114}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Put your arms up like so. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Put your arms up like this. </td>
+  <td> 80.3428 </td> </tr><tr> <th> sys2 </th>
+  <td> I'm not sure what to do. </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('115_latex')">Show/Hide LaTeX</button> <br/><pre id="115_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Put your arms up like so. &  \\
+sys1 & Put your arms up like this. & 80.3428 \\
+sys2 & I'm not sure what to do. & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table115}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Do you snore at night? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Do you snore at night? </td>
+  <td> 100.0000 </td> </tr><tr> <th> sys2 </th>
+  <td> Do you call at night? </td>
+  <td> 44.7214 </td> </tr>
+</table>
+ <br/><button onclick="showhide('116_latex')">Show/Hide LaTeX</button> <br/><pre id="116_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Do you snore at night? &  \\
+sys1 & Do you snore at night? & 100.0000 \\
+sys2 & Do you call at night? & 44.7214 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table116}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan shows a build-up of stool in the colon. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> The CT scan shows a build-up of poop in the colon. </td>
+  <td> 73.3366 </td> </tr><tr> <th> sys2 </th>
+  <td> CT scans show that there is a buildup of feces in the colon. </td>
+  <td> 20.0429 </td> </tr>
+</table>
+ <br/><button onclick="showhide('117_latex')">Show/Hide LaTeX</button> <br/><pre id="117_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & The CT scan shows a build-up of stool in the colon. &  \\
+sys1 & The CT scan shows a build-up of poop in the colon. & 73.3366 \\
+sys2 & CT scans show that there is a buildup of feces in the colon. & 20.0429 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table117}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Any irritability? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Any vexation? </td>
+  <td> 50.0000 </td> </tr><tr> <th> sys2 </th>
+  <td> Is there any irritation? </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('118_latex')">Show/Hide LaTeX</button> <br/><pre id="118_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Any irritability? &  \\
+sys1 & Any vexation? & 50.0000 \\
+sys2 & Is there any irritation? & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table118}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Is your father alive? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Is your father alive? </td>
+  <td> 100.0000 </td> </tr><tr> <th> sys2 </th>
+  <td> Is your father still alive? </td>
+  <td> 53.1830 </td> </tr>
+</table>
+ <br/><button onclick="showhide('119_latex')">Show/Hide LaTeX</button> <br/><pre id="119_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Is your father alive? &  \\
+sys1 & Is your father alive? & 100.0000 \\
+sys2 & Is your father still alive? & 53.1830 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table119}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Does your child have slurred speech? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Does your child have a language? </td>
+  <td> 60.4275 </td> </tr><tr> <th> sys2 </th>
+  <td> Do your children not understand the language? </td>
+  <td> 16.1499 </td> </tr>
+</table>
+ <br/><button onclick="showhide('120_latex')">Show/Hide LaTeX</button> <br/><pre id="120_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Does your child have slurred speech? &  \\
+sys1 & Does your child have a language? & 60.4275 \\
+sys2 & Do your children not understand the language? & 16.1499 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table120}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> The CT scan shows evidence of muscle infection or inflammation. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> The CT scan shows muscle infection or inflammation. </td>
+  <td> 58.2289 </td> </tr><tr> <th> sys2 </th>
+  <td> CT scans show staining or inflammation of the muscles. </td>
+  <td> 14.3502 </td> </tr>
+</table>
+ <br/><button onclick="showhide('121_latex')">Show/Hide LaTeX</button> <br/><pre id="121_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & The CT scan shows evidence of muscle infection or inflammation. &  \\
+sys1 & The CT scan shows muscle infection or inflammation. & 58.2289 \\
+sys2 & CT scans show staining or inflammation of the muscles. & 14.3502 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table121}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> What is this called? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> What's this called? </td>
+  <td> 41.3690 </td> </tr><tr> <th> sys2 </th>
+  <td> What's this? </td>
+  <td> 0 </td> </tr>
+</table>
+ <br/><button onclick="showhide('122_latex')">Show/Hide LaTeX</button> <br/><pre id="122_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & What is this called? &  \\
+sys1 & What's this called? & 41.3690 \\
+sys2 & What's this? & 0 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table122}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> The MRI shows evidence of skin infection or inflammation. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> The MRI shows a skin infection or inflammation. </td>
+  <td> 52.4736 </td> </tr><tr> <th> sys2 </th>
+  <td> Nuclear magnetic resonance imaging shows that the skin is infected or inflamed. </td>
+  <td> 11.7312 </td> </tr>
+</table>
+ <br/><button onclick="showhide('123_latex')">Show/Hide LaTeX</button> <br/><pre id="123_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & The MRI shows evidence of skin infection or inflammation. &  \\
+sys1 & The MRI shows a skin infection or inflammation. & 52.4736 \\
+sys2 & Nuclear magnetic resonance imaging shows that the skin is infected or inflamed. & 11.7312 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table123}
+\end{table}</pre><h4> 10 sentences where sys2>sys1 at sentence-level BLEU </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> How long has your child had constipation? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> How long did your kid's constipation last? </td>
+  <td> 25.2760 </td> </tr><tr> <th> sys2 </th>
+  <td> How long has your child been constipated? </td>
+  <td> 67.2126 </td> </tr>
+</table>
+ <br/><button onclick="showhide('124_latex')">Show/Hide LaTeX</button> <br/><pre id="124_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & How long has your child had constipation? &  \\
+sys1 & How long did your kid's constipation last? & 25.2760 \\
+sys2 & How long has your child been constipated? & 67.2126 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table124}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Have you been diagnosed with Hepatitis C? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Are you diagnosed with hepatitis? </td>
+  <td> 25.2081 </td> </tr><tr> <th> sys2 </th>
+  <td> Have you been diagnosed with hepatitis? </td>
+  <td> 68.0087 </td> </tr>
+</table>
+ <br/><button onclick="showhide('125_latex')">Show/Hide LaTeX</button> <br/><pre id="125_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Have you been diagnosed with Hepatitis C? &  \\
+sys1 & Are you diagnosed with hepatitis? & 25.2081 \\
+sys2 & Have you been diagnosed with hepatitis? & 68.0087 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table125}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Do you feel like your appetite is decreased? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Do you feel your appetite is reduced? </td>
+  <td> 43.1210 </td> </tr><tr> <th> sys2 </th>
+  <td> Do you feel like your appetite is decreasing? </td>
+  <td> 85.9948 </td> </tr>
+</table>
+ <br/><button onclick="showhide('126_latex')">Show/Hide LaTeX</button> <br/><pre id="126_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Do you feel like your appetite is decreased? &  \\
+sys1 & Do you feel your appetite is reduced? & 43.1210 \\
+sys2 & Do you feel like your appetite is decreasing? & 85.9948 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table126}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> If we find the cause of your symptoms, we will fix it but it is possible that everything will look normal inside. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> If we find out why you're sick, we'll deal with it, but it'll probably look normal inside. </td>
+  <td> 14.6990 </td> </tr><tr> <th> sys2 </th>
+  <td> If we find the cause of your illness, we will treat it, but it is also possible that everything will look normal inside. </td>
+  <td> 60.5410 </td> </tr>
+</table>
+ <br/><button onclick="showhide('127_latex')">Show/Hide LaTeX</button> <br/><pre id="127_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & If we find the cause of your symptoms, we will fix it but it is possible that everything will look normal inside. &  \\
+sys1 & If we find out why you're sick, we'll deal with it, but it'll probably look normal inside. & 14.6990 \\
+sys2 & If we find the cause of your illness, we will treat it, but it is also possible that everything will look normal inside. & 60.5410 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table127}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Have you been diagnosed with iron deficiency? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Are you diagnosed with iron deficiency? </td>
+  <td> 54.0854 </td> </tr><tr> <th> sys2 </th>
+  <td> Have you been diagnosed with iron deficiency? </td>
+  <td> 100.0000 </td> </tr>
+</table>
+ <br/><button onclick="showhide('128_latex')">Show/Hide LaTeX</button> <br/><pre id="128_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Have you been diagnosed with iron deficiency? &  \\
+sys1 & Are you diagnosed with iron deficiency? & 54.0854 \\
+sys2 & Have you been diagnosed with iron deficiency? & 100.0000 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table128}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Have you been diagnosed with Hemophilia? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Are you diagnosed with haemophilia? </td>
+  <td> 30.7892 </td> </tr><tr> <th> sys2 </th>
+  <td> Have you been diagnosed with leukemia? </td>
+  <td> 80.3428 </td> </tr>
+</table>
+ <br/><button onclick="showhide('129_latex')">Show/Hide LaTeX</button> <br/><pre id="129_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Have you been diagnosed with Hemophilia? &  \\
+sys1 & Are you diagnosed with haemophilia? & 30.7892 \\
+sys2 & Have you been diagnosed with leukemia? & 80.3428 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table129}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> You are now fully dilated. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> You're now completely expanded. </td>
+  <td> 24.8805 </td> </tr><tr> <th> sys2 </th>
+  <td> You are now fully expanded. </td>
+  <td> 75.2121 </td> </tr>
+</table>
+ <br/><button onclick="showhide('130_latex')">Show/Hide LaTeX</button> <br/><pre id="130_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & You are now fully dilated. &  \\
+sys1 & You're now completely expanded. & 24.8805 \\
+sys2 & You are now fully expanded. & 75.2121 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table130}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Has your child had any side effects? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Did your kids have side effects? </td>
+  <td> 25.5754 </td> </tr><tr> <th> sys2 </th>
+  <td> Have your child had any side effects? </td>
+  <td> 83.6573 </td> </tr>
+</table>
+ <br/><button onclick="showhide('131_latex')">Show/Hide LaTeX</button> <br/><pre id="131_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Has your child had any side effects? &  \\
+sys1 & Did your kids have side effects? & 25.5754 \\
+sys2 & Have your child had any side effects? & 83.6573 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table131}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Do you have chest pain? </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Does your chest hurt? </td>
+  <td> 24.8805 </td> </tr><tr> <th> sys2 </th>
+  <td> Do you have chest pain? </td>
+  <td> 100.0000 </td> </tr>
+</table>
+ <br/><button onclick="showhide('132_latex')">Show/Hide LaTeX</button> <br/><pre id="132_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Do you have chest pain? &  \\
+sys1 & Does your chest hurt? & 24.8805 \\
+sys2 & Do you have chest pain? & 100.0000 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table132}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th>
+  <th> sentbleu </th> </tr><tr> <th> Ref </th>
+  <td> Hello, I am your child's physical therapist. </td>
+  <td>  </td> </tr><tr> <th> sys1 </th>
+  <td> Hi, I'm your kid's physiotherapist. </td>
+  <td> 16.1065 </td> </tr><tr> <th> sys2 </th>
+  <td> Hello, I am your child's physical therapist. </td>
+  <td> 100.0000 </td> </tr>
+</table>
+ <br/><button onclick="showhide('133_latex')">Show/Hide LaTeX</button> <br/><pre id="133_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||cc}
+ & Output & sentbleu \\ \hline \hline
+Ref & Hello, I am your child's physical therapist. &  \\
+sys1 & Hi, I'm your kid's physiotherapist. & 16.1065 \\
+sys2 & Hello, I am your child's physical therapist. & 100.0000 \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table133}
+\end{table}</pre> 
+</body>
+</html>

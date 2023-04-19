@@ -1,1 +1,11 @@
-# NMT_Medical_Dialogue
+## Senior Thesis 2022-23 at Princeton University
+
+### Addressing Language Barriers in Healthcare: Building Chinese-English Neural Machine Translation Models for Doctor-Patient Dialogues
+**Author**: Ashley Teng
+
+**Advisor**: Professor Danqi Chen
+
+**Abstract**:
+The accuracy of neural machine translation (NMT) for doctor-patient medical dialogues is crucial in real-life scenarios where professional medical advice is provided. To effectively evaluate the performance of strong NMT models on medical data sets, we choose to study high-resource languages Mandarin Chinese and English. In response to a lack of sufficient medical conversational data, we introduce a new medical dialogue data set: Medical Score (MScore). We also conduct a study on the translation accuracy of Google Translate for MScore in which certified interpreters report 93.6% accuracy.
+
+To analyze the performance of strong NMT models on new and existing medical data sets, we select the best among high-performing NMT models: supervised system OPUS-MT which is based on Marian-NMT, and conduct experiments that train the model on various combinations of medical data sets containing articles and dialogues. We evaluate the resulting OPUS-MT models on target domain data, CSMS (combines MScore with another medical dialogue set) with the highest-performing model achieving a BLEU score of 46.9, surpassing Google Translate's supervised system. The experiments show that training on medical data sets that contain noisy conversational sentences is more effective than clean biomedical articles for translating medical dialogues. We also observe that Chinese-English models have difficulty handling Chinese medical terms with multiple meanings and translating Chinese with missing pronouns to English with the correct pronouns. With the recent release of ChatGPT, a system trained with both supervised and unsupervised learning, we also study ChatGPT's conversational strength and limitations, with an emphasis on its ability to translate Chinese medical dialogues with dropped pronouns.
